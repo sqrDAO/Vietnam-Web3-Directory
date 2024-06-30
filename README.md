@@ -28,7 +28,9 @@
 
 ### Analytics and Data
 
-### Sample
+### Sample Category
+
+- **Project A** - A decentralized exchange built on Base: [Web](https://projecta.com) | [X](https://x.com/projecta)
 
 ## Contributions
 
