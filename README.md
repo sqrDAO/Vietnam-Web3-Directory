@@ -4,19 +4,11 @@
 
 ### DeFi
 
-
-
 ### Dev Infra
-
-
 
 ## NFTs
 
-
-
 ## AI x Crypto
-
-
 
 ## Community
 
@@ -30,19 +22,13 @@
 
 ### Documentation
 
-
-
 ### Services
-
-
 
 ### Repos
 
-
-
 ### Analytics and Data
 
-
+### Sample
 
 ## Contributions
 
