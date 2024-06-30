@@ -16,20 +16,7 @@
 
 ## AI x Crypto
 
-These bots are available on Farcaster. You can mention them in a cast to get a reply.
 
-- [@remindme](https://warpcast.com/remindme) - Reply to any cast with "@remindme `Number` `Day or Month or Year`" to be reminded in the future.
-- [@launch](https://warpcast.com/launch) - Reply to any cast with "@launch `Title (optional)`" to launch on Launchcaster.
-- [@perl](https://warpcast.com/perl) - Reply to any cast with "@perl `Category (optional)`" to save it as a Perl.
-- [@mintit](https://warpcast.com/mintit) - Reply to any cast with "@mintit" to mint the cast as an NFT.
-- [@alert](https://warpcast.com/alert) - Set up an alert on Alertcaster and alert bot will mention you as a reply to casts matching the alert.
-- [@survey](https://warpcast.com/survey) - Reply to any cast with "@survey" to bookmark it as a potential [Ponder](https://www.weponder.io) survey.
-- [@paragraph](https://warpcast.com/paragraph) - Summarizes and casts about articles published on [Paragraph](https://paragraph.xyz).
-- [@bountybot](https://warpcast.com/bountybot) - Mention @bountybot and include bounty `Description`, `Amount`, `Deadline (optional)` to create a bounty.
-- [@translate](https://warpcast.com/translate) - Reply to any cast with "@translate `Language`" to get the translated text.
-- [@ballot](https://warpcast.com/ballot) - Write mention to @ballot with a question and a list of options and it will create a frame from [Farcaster.vote](https://farcaster.vote/app) for you. [Example](https://warpcast.com/ballot/0xeb1a95bb).
-- [@events](https://warpcast.com/event) - Up-to-date event.xyz information via frames.
-- [@indexer](https://warpcast.com/indexer) - AI-powered social search engine leveraging algorithmic and social curation.
 
 ## Community
 
@@ -47,10 +34,7 @@ These bots are available on Farcaster. You can mention them in a cast to get a r
 
 ### Services
 
-- [Neynar Hosted Hubs](https://hubs.neynar.com)
-- [far.quest Free & Open-Source Farcaster APIs](https://docs.far.quest)
-- [Airstack API Studio](https://app.airstack.xyz)
-- [Airstack Explorer](https://explorer.airstack.xyz)
+
 
 ### Repos
 
