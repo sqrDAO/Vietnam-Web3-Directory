@@ -11,15 +11,30 @@
 
 ### DeFi
 
-### Dev Infra
+| Project                              | Description                                                                                             | Eco         | X                                             | Status   |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------- | ----------- | --------------------------------------------- | -------- |
+| [Kyber Network](https://kyber.network/) | Kyber Network is a multi-chain crypto trading and liquidity hub that connects liquidity from different sources to enable trades at the best rates. | EVM, Solana | [@KyberNetwork](https://x.com/KyberNetwork) | `OG` |
+| [Krystal](https://krystal.app/) | Krystal’s mission is to make Liquidity Provisioning Profitable, Accessible, and Convenient to Anyone. | EVM | [@KrystalDeFi](https://x.com/KrystalDeFi) | `Growth` |
+| [Harmonix Finance](https://harmonix.fi/) | Harmonix is a sophisticated platform that brings hedge fund strategies on-chain to generate high yields for investors. Using the latest decentralized finance (DeFi) technologies, Harmonix provides a secure and transparent environment where both seasoned traders and newcomers can invest with confidence. | EVM | [@HarmonixFi](https://x.com/harmonixfi) | `Seed` |
+| [BSX](https://www.bsx.exchange/) | Optimized trading engine built for traders and powered by next-generation decentralized blockchain infrastructure enabling low fees and deep liquidity - built by traders, for traders. | Base/EVM | [@bsx_labs](https://x.com/bsx_labs) | `Growth` |
+| [Copin](https://copin.io/) | Copin.io is a platform designed for the mass adoption of the perpetual DEX narrative. It enables users to explore, analyze, and copy on-chain traders from the top of Perpetual DEXs including dYdx, GMX, Kwenta, etc. | EVM | [@Copin_io](https://x.com/Copin_io) | `Growth` |
+| [EnsoFi](https://ensofi.xyz/) | EnsoFi is the first decentralised peer-to-peer cross-chain lending platform, giving users the ability to lend on one chain while collateralising on other chain. | Solana, Sui, Monad | [@Ensofi_xyz](https://x.com/Ensofi_xyz) | `Seed` |
+
+### Consumer Cryptos
+
+
 
 ## NFTs
 
+
+
 ## AI x Crypto
 
-## Community
 
-### Research
+
+## Community/Research
+
+
 
 ### R&D
 
