@@ -30,7 +30,10 @@
 
 ### Sample Category
 
-- **Project A** - A decentralized exchange built on Base: [Web](https://projecta.com) | [X](https://x.com/projecta)
+| Project            | Description                  | Eco      | X                         | Status   |
+|--------------------|------------------------------|----------|---------------------------|----------|
+| [A](https://a.com) | A sample project A on Solana | Solana   | [@0xa](https://x.com/0xa) | `Growth` |
+| [B](https://b.com) | A multichain DEX             | Multiple | [@0xb](https://x.com/0xb) | `Early`  |
 
 ## Contributions
 
