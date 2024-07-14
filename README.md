@@ -3,24 +3,19 @@
 ## General
 
 ### Chain
-| Project                              | Description                                                                                                                                                                                     | Eco         | X                         | Status   |
-|--------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|---------------------------|----------|
+
+| Project                              | Description                                                                                             | Eco         | X                                             | Status   |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------- | ----------- | --------------------------------------------- | -------- |
 | [Aura Network](https://aura.network) | Aura Network is an Abstraction Layer for Intellectual Property (IP), aiming to revolutionize RWA areas. | EVM, Cosmos | [@AuraNetworkHQ](https://x.com/AuraNetworkHQ) | `Growth` |
-|                                      |                                                                                                                                                                                                 |             |                           |          |
+|                                      |                                                                                                         |             |                                               |          |
 
 ### DeFi
 
 ### Dev Infra
 
-
-
 ## NFTs
 
-
-
 ## AI x Crypto
-
-
 
 ## Community
 
@@ -34,23 +29,17 @@
 
 ### Documentation
 
-
-
 ### Services
-
-
 
 ### Repos
 
-
-
 ### Analytics and Data
-
-
 
 ## Contributions
 
 This is a community-curated list of Vietnam Web3-related projects. If you have a project that you would like to add, please open a pull request. Please try to match or improve upon the format of the existing entries.
+
+For starter, please follow the directory [guide](guide.md).
 
 Projects that are inactive, outdated, or no longer relevant may be removed at any time.
 
