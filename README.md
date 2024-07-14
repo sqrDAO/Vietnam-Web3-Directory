@@ -12,15 +12,9 @@
 
 ### Dev Infra
 
-
-
 ## NFTs
 
-
-
 ## AI x Crypto
-
-
 
 ## Community
 
@@ -34,19 +28,18 @@
 
 ### Documentation
 
-
-
 ### Services
-
-
 
 ### Repos
 
-
-
 ### Analytics and Data
 
+### Sample Category
 
+| Project            | Description                  | Eco      | X                         | Status   |
+|--------------------|------------------------------|----------|---------------------------|----------|
+| [A](https://a.com) | A sample project A on Solana | Solana   | [@0xa](https://x.com/0xa) | `Growth` |
+| [B](https://b.com) | A multichain DEX             | Multiple | [@0xb](https://x.com/0xb) | `Early`  |
 
 ## Contributions
 
