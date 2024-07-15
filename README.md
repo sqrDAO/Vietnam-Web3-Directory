@@ -6,10 +6,11 @@
 
 | Project                              | Description                                                                                             | Eco         | X                                             | Status   |
 | ------------------------------------ | ------------------------------------------------------------------------------------------------------- | ----------- | --------------------------------------------- | -------- |
-| [Aura Network](https://aura.network) | Aura Network is an Abstraction Layer for Intellectual Property (IP), aiming to revolutionize RWA areas. | EVM, Cosmos | [@AuraNetworkHQ](https://x.com/AuraNetworkHQ) | `Growth` |
-| [Oraichain](https://orai.io/) | Oraichain provides multidimensional trustworthy proofs of AI and enables secure integration with Web3. Oraichain is the world's first layer 1 of AI oracle. | Cosmos | [@oraichain](https://x.com/oraichain) | `Growth` |
-| [Viction](https://www.viction.xyz/) | Viction, formerly Tomochain, is a people-centric blockchain, offering zero-gas transactions and enhanced security to make Web3 easy and safe for everyone. | EVM | [@BuildOnViction](https://x.com/BuildOnViction) | `Growth` |
-| [Ancient8](https://ancient8.gg/) | Ancient8 Chain is a gaming-focused community-driven Ethereum Layer 2, powered by the OP Stack and enhanced with Celestia, specifically tailored to tackle the scalability and adoption challenges faced by web3 gaming and consumer DApps. | EVM, Cosmos | [@Ancient8_gg](https://x.com/Ancient8_gg) | `Growth` |
+| [Ronin](https://roninchain.com/) | Ronin is an EVM blockchain crafted for developers building games with player-owned economies. | EVM, zkEVM | [@Ronin_Network](https://x.com/Ronin_Network) | `Mainnet` |
+| [Aura Network](https://aura.network) | Aura Network is an Abstraction Layer for Intellectual Property (IP), aiming to revolutionize RWA areas. | EVM, Cosmos | [@AuraNetworkHQ](https://x.com/AuraNetworkHQ) | `Mainnet` |
+| [Oraichain](https://orai.io/) | Oraichain provides multidimensional trustworthy proofs of AI and enables secure integration with Web3. Oraichain is the world's first layer 1 of AI oracle. | Cosmos | [@oraichain](https://x.com/oraichain) | `Mainnet` |
+| [Viction](https://www.viction.xyz/) | Viction, formerly Tomochain, is a people-centric blockchain, offering zero-gas transactions and enhanced security to make Web3 easy and safe for everyone. | EVM | [@BuildOnViction](https://x.com/BuildOnViction) | `Mainnet` |
+| [Ancient8](https://ancient8.gg/) | Ancient8 Chain is a gaming-focused community-driven Ethereum Layer 2, powered by the OP Stack and enhanced with Celestia, specifically tailored to tackle the scalability and adoption challenges faced by web3 gaming and consumer DApps. | EVM, Cosmos | [@Ancient8_gg](https://x.com/Ancient8_gg) | `Mainnet` |
 
 ### DeFi
 
@@ -23,6 +24,10 @@
 | [Copin](https://copin.io/) | Copin.io is a platform designed for the mass adoption of the perpetual DEX narrative. It enables users to explore, analyze, and copy on-chain traders from the top of Perpetual DEXs including dYdx, GMX, Kwenta, etc. | EVM | [@Copin_io](https://x.com/Copin_io) | `Growth` |
 | [EnsoFi](https://ensofi.xyz/) | EnsoFi is the first decentralised peer-to-peer cross-chain lending platform, giving users the ability to lend on one chain while collateralising on other chain. | Solana, Sui, Monad | [@Ensofi_xyz](https://x.com/Ensofi_xyz) | `Seed` |
 
+### Gaming
+
+| [EnsoFi](https://ensofi.xyz/) | EnsoFi is the first decentralised peer-to-peer cross-chain lending platform, giving users the ability to lend on one chain while collateralising on other chain. | Solana, Sui, Monad | [@Ensofi_xyz](https://x.com/Ensofi_xyz) | `Seed` |
+
 ### Consumer Cryptos
 
 ## NFTs
@@ -31,7 +36,7 @@
 
 ## AI x Crypto
 
-
+| [Inferium](https://www.inferium.io/) | Inferium is a ML-driven intelligent store and aggregator for AI inference. It empower developers to seamlessly verify, deploy, and list their AI models. | EVM | [@InferiumAI](https://x.com/InferiumAI) | `Seed` |
 
 ## Community/Research
 
