@@ -11,6 +11,7 @@
 | [Oraichain](https://orai.io/) | Oraichain provides multidimensional trustworthy proofs of AI and enables secure integration with Web3. Oraichain is the world's first layer 1 of AI oracle. | Cosmos | [@oraichain](https://x.com/oraichain) | `Mainnet` |
 | [Viction](https://www.viction.xyz/) | Viction, formerly Tomochain, is a people-centric blockchain, offering zero-gas transactions and enhanced security to make Web3 easy and safe for everyone. | EVM | [@BuildOnViction](https://x.com/BuildOnViction) | `Mainnet` |
 | [Ancient8](https://ancient8.gg/) | Ancient8 Chain is a gaming-focused community-driven Ethereum Layer 2, powered by the OP Stack and enhanced with Celestia, specifically tailored to tackle the scalability and adoption challenges faced by web3 gaming and consumer DApps. | EVM, Cosmos | [@Ancient8_gg](https://x.com/Ancient8_gg) | `Mainnet` |
+| [Mirai Labs](https://mirailabs.co/) | One of Vietnam's top mobile game development studios known for generating $200M in trading volume in its first ever blockchain title. | EVM/AVAX | [@themirailabs](https://x.com/themirailabs) | `Mainnet` |
 
 ### DeFi
 
@@ -26,13 +27,16 @@
 
 ### Gaming
 
-| [EnsoFi](https://ensofi.xyz/) | EnsoFi is the first decentralised peer-to-peer cross-chain lending platform, giving users the ability to lend on one chain while collateralising on other chain. | Solana, Sui, Monad | [@Ensofi_xyz](https://x.com/Ensofi_xyz) | `Seed` |
+| [Axie Infinity](https://axieinfinity.com/) | Axie Infinity is a blockchain game developed by Vietnamese studio Sky Mavis, known for its pioneering Play2Earn in-game economy concept. | EVM | [@AxieInfinity](https://x.com/AxieInfinity) | `OG` |
+| [Pegaxy](https://pegaxy.io/) | Pegaxy is a multiplayer horse racing game with futuristic Pega's battling to dominate the racetrack. | EVM | [@PegaxyOfficial](https://x.com/PegaxyOfficial) | `OG` |
+| [Sipher Odyssey](https://playsipher.com/) | Sipher is a multiplayer looter shooter ARPG, set in a dream-like universe of alien worlds, vibrant characters, and dangerous mysteries. | EVM | [@playSIPHER](https://x.com/playSIPHER) | `OG` |
 
-### Consumer Cryptos
+### NFTs
 
-## NFTs
+| [XomNFT](https://t.me/xomnftchat) | TBC | EVM, Solana, Sui, Monad | [@xomnft_](https://x.com/xomnft_) | `OG` |
+| [Pyra Research](https://discord.gg/pyraresearch) | TBC | EVM, Solana, Sui, Aptos, Monad | [@pyraresearch](https://x.com/pyraresearch) | `OG` |
 
-
+### Others
 
 ## AI x Crypto
 
@@ -40,19 +44,7 @@
 
 ## Community/Research
 
-
-
-### R&D
-
-
-
-### Trading
-
-
-
 ## Developer Resources
-
-
 
 ### Documentation
 
