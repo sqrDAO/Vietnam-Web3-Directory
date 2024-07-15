@@ -31,20 +31,27 @@
 | [Pegaxy](https://pegaxy.io/) | Pegaxy is a multiplayer horse racing game with futuristic Pega's battling to dominate the racetrack. | EVM | [@PegaxyOfficial](https://x.com/PegaxyOfficial) | `OG` |
 | [Sipher Odyssey](https://playsipher.com/) | Sipher is a multiplayer looter shooter ARPG, set in a dream-like universe of alien worlds, vibrant characters, and dangerous mysteries. | EVM | [@playSIPHER](https://x.com/playSIPHER) | `OG` |
 
+### Social/Consumer
+
+
+
 ### NFTs
 
-| [XomNFT](https://t.me/xomnftchat) | TBC | EVM, Solana, Sui, Monad | [@xomnft_](https://x.com/xomnft_) | `OG` |
-| [Pyra Research](https://discord.gg/pyraresearch) | TBC | EVM, Solana, Sui, Aptos, Monad | [@pyraresearch](https://x.com/pyraresearch) | `OG` |
+| [XomNFT](https://t.me/xomnftchat) | TBC | EVM, Solana, Sui, Monad | [@xomnft_](https://x.com/xomnft_) | `Growth` |
+| [Pyra Aliens](https://discord.gg/pyraresearch) | Pyra Aliens is a community-driven brand that aspires to redefine the existing structure of the web3 community. | EVM, Solana, Sui, Aptos, Monad | [@pyraaliens](https://x.com/pyraaliens) | `Growth` |
+| [AANC](https://antiantinfts.club/) | AANC (AntiAntiNFTs Club) is a powerhouse NFT DAO established in Vietnam in 2021, now growing rapidly across Asia in regions like Hong Kong & Thailand. | EVM | [@AANC_Official](https://x.com/AANC_Official) | `Growth` |
 
 ### Others
 
-## AI x Crypto
+#### AI x Crypto
 
 | [Inferium](https://www.inferium.io/) | Inferium is a ML-driven intelligent store and aggregator for AI inference. It empower developers to seamlessly verify, deploy, and list their AI models. | EVM | [@InferiumAI](https://x.com/InferiumAI) | `Seed` |
 
-## Community/Research
+#### Developer Resources
 
-## Developer Resources
+### Funding
+
+
 
 ### Documentation
 
