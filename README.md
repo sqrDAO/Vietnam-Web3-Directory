@@ -27,6 +27,8 @@
 
 ### Gaming
 
+| Project                              | Description                                                                                             | Eco         | X                                             | Status   |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------- | ----------- | --------------------------------------------- | -------- |
 | [Axie Infinity](https://axieinfinity.com/) | Axie Infinity is a blockchain game developed by Vietnamese studio Sky Mavis, known for its pioneering Play2Earn in-game economy concept. | EVM | [@AxieInfinity](https://x.com/AxieInfinity) | `OG` |
 | [Pegaxy](https://pegaxy.io/) | Pegaxy is a multiplayer horse racing game with futuristic Pega's battling to dominate the racetrack. | EVM | [@PegaxyOfficial](https://x.com/PegaxyOfficial) | `OG` |
 | [Sipher Odyssey](https://playsipher.com/) | Sipher is a multiplayer looter shooter ARPG, set in a dream-like universe of alien worlds, vibrant characters, and dangerous mysteries. | EVM | [@playSIPHER](https://x.com/playSIPHER) | `OG` |
@@ -37,27 +39,29 @@
 
 ### NFTs
 
+| Project                              | Description                                                                                             | Eco         | X                                             | Status   |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------- | ----------- | --------------------------------------------- | -------- |
 | [XomNFT](https://t.me/xomnftchat) | TBC | EVM, Solana, Sui, Monad | [@xomnft_](https://x.com/xomnft_) | `Growth` |
 | [Pyra Aliens](https://discord.gg/pyraresearch) | Pyra Aliens is a community-driven brand that aspires to redefine the existing structure of the web3 community. | EVM, Solana, Sui, Aptos, Monad | [@pyraaliens](https://x.com/pyraaliens) | `Growth` |
-| [AANC](https://antiantinfts.club/) | AANC (AntiAntiNFTs Club) is a powerhouse NFT DAO established in Vietnam in 2021, now growing rapidly across Asia in regions like Hong Kong & Thailand. | EVM | [@AANC_Official](https://x.com/AANC_Official) | `Growth` |
+| [AANC](https://link3.to/aanc) | AANC (AntiAntiNFTs Club) is a powerhouse NFT DAO established in Vietnam in 2021, now growing rapidly across Asia in regions like Hong Kong & Thailand. | EVM | [@AANC_Official](https://x.com/AANC_Official) | `Growth` |
 
 ### Others
 
 #### AI x Crypto
 
+| Project                              | Description                                                                                             | Eco         | X                                             | Status   |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------- | ----------- | --------------------------------------------- | -------- |
 | [Inferium](https://www.inferium.io/) | Inferium is a ML-driven intelligent store and aggregator for AI inference. It empower developers to seamlessly verify, deploy, and list their AI models. | EVM | [@InferiumAI](https://x.com/InferiumAI) | `Seed` |
 
-#### Developer Resources
+#### Builder Resources
 
-### Funding
+### Funding Network
 
-
-
-### Documentation
+| Project                              | Description                                                                                             | Eco         | X                                             | Stage   |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------- | ----------- | --------------------------------------------- | -------- |
+| [Caliber](https://caliber.build/) | Caliber is a Web3 Venture Builder started by veteran Web3 builders to develop the next generation of Web3 startups with new founders. Our main focus is building innovative Web3 products, particularly in Consumer Applications, DeFi Primitives, and Infrastructures. | EVM, Solana | [@CaliberBuild](https://x.com/CaliberBuild) | `Early` |
 
 ### Services
-
-### Repos
 
 ### Analytics and Data
 
