@@ -14,6 +14,7 @@
 | [Mirai Labs](https://mirailabs.co/) | One of Vietnam's top mobile game development studios known for generating $200M in trading volume in its first ever blockchain title. | EVM/AVAX | [@themirailabs](https://x.com/themirailabs) | `Mainnet` |
 | [Funkichain](https://funkichain.com/) | Funki is an L2 Ethereum Rollup Network, powered by the OP Stack, part of the Superchain, leveraging OP Plasma Mode and secured by Ethereum - is A Playground for the next Digital Pop Culture. 
  | EVM | [@funkichain](https://x.com/funkichain) | `Testnet` |
+ | [ZERO Network](https://zero.network/) | ZERϴ Network is the first EVM-compatible rollup that eliminates the need for gas entirely within the network. | EVM | [@zerodotnetwork](https://x.com/zerodotnetwork) | `Testnet` |
 
 ### DeFi
 
@@ -38,19 +39,21 @@
 | [Axie Infinity](https://axieinfinity.com/) | Axie Infinity is a blockchain game developed by Vietnamese studio Sky Mavis, known for its pioneering Play2Earn in-game economy concept. | EVM | [@AxieInfinity](https://x.com/AxieInfinity) | `OG` |
 | [Pegaxy](https://pegaxy.io/) | Pegaxy is a multiplayer horse racing game with futuristic Pega's battling to dominate the racetrack. | EVM | [@PegaxyOfficial](https://x.com/PegaxyOfficial) | `OG` |
 | [Sipher Odyssey](https://playsipher.com/) | Sipher is a multiplayer looter shooter ARPG, set in a dream-like universe of alien worlds, vibrant characters, and dangerous mysteries. | EVM | [@playSIPHER](https://x.com/playSIPHER) | `OG` |
-| [xPet](https://playsipher.com/) | Sipher is a multiplayer looter shooter ARPG, set in a dream-like universe of alien worlds, vibrant characters, and dangerous mysteries. | EVM | [@playSIPHER](https://x.com/playSIPHER) | `OG` |
+| [xPet](https://www.xpet.tech/) | xpet tech is a project that amalgamates Social and Game elements, whereby users may cultivate their virtual pets within a social network environment and partake in enchanting adventures. | EVM | [@xpet_tech](https://x.com/xpet_tech) | `Early` |
 
 ### Social/Consumer
 
-
+| Project                              | Description                                                                                             | Eco         | X                                             | Status   |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------- | ----------- | --------------------------------------------- | -------- |
+| [Zerion Wallet](https://zerion.io/) | Zerion is a crypto wallet for everything onchain so you can manage all your investments, collections, staked positions and airdrops across 14 chains. | EVM | [@zerion](https://x.com/zerion) | `Growth` |
 
 ### NFTs
 
 | Project                              | Description                                                                                             | Eco         | X                                             | Status   |
 | ------------------------------------ | ------------------------------------------------------------------------------------------------------- | ----------- | --------------------------------------------- | -------- |
-| [XomNFT](https://t.me/xomnftchat) | TBC | EVM, Solana, Sui, Monad | [@xomnft_](https://x.com/xomnft_) | `Growth` |
-| [Pyra Aliens](https://discord.gg/pyraresearch) | Pyra Aliens is a community-driven brand that aspires to redefine the existing structure of the web3 community. | EVM, Solana, Sui, Aptos, Monad | [@pyraaliens](https://x.com/pyraaliens) | `Growth` |
-| [AANC](https://link3.to/aanc) | AANC (AntiAntiNFTs Club) is a powerhouse NFT DAO established in Vietnam in 2021, now growing rapidly across Asia in regions like Hong Kong & Thailand. | EVM | [@AANC_Official](https://x.com/AANC_Official) | `Growth` |
+| [XomNFT](https://t.me/xomnftchat) | TBC | EVM, Solana, Sui, Monad | [@xomnft_](https://x.com/xomnft_) | `Active` |
+| [Pyra Aliens](https://discord.gg/pyraresearch) | Pyra Aliens is a community-driven brand that aspires to redefine the existing structure of the web3 community. | EVM, Solana, Sui, Aptos, Monad | [@pyraaliens](https://x.com/pyraaliens) | `Active` |
+| [AANC](https://link3.to/aanc) | AANC (AntiAntiNFTs Club) is a powerhouse NFT DAO established in Vietnam in 2021, now growing rapidly across Asia in regions like Hong Kong & Thailand. | EVM | [@AANC_Official](https://x.com/AANC_Official) | `Active` |
 
 ### Others
 
@@ -61,7 +64,11 @@
 | [Inferium](https://www.inferium.io/) | Inferium is a ML-driven intelligent store and aggregator for AI inference. It empower developers to seamlessly verify, deploy, and list their AI models. | EVM | [@InferiumAI](https://x.com/InferiumAI) | `Pre-Launch` |
 | [GAIA](https://protogaia.com/) | GAIA - Generative AI Abilities for mankind - is a collaborative multi-modality AI platform, with an ambitious movement to give human and AI agents superpowers, uncensored & equitable. | EVM |  | `Pre-Launch` |
 
-#### Builder Resources
+#### Onramps
+
+
+
+## Builder Resources
 
 ### Funding
 
