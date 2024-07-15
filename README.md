@@ -2,18 +2,21 @@
 
 ## General
 
-### Chain
+### Chain / Infras
 
 | Project                              | Description                                                                                             | Eco         | X                                             | Status   |
 | ------------------------------------ | ------------------------------------------------------------------------------------------------------- | ----------- | --------------------------------------------- | -------- |
 | [Aura Network](https://aura.network) | Aura Network is an Abstraction Layer for Intellectual Property (IP), aiming to revolutionize RWA areas. | EVM, Cosmos | [@AuraNetworkHQ](https://x.com/AuraNetworkHQ) | `Growth` |
-|                                      |                                                                                                         |             |                                               |          |
+| [Oraichain](https://orai.io/) | Oraichain provides multidimensional trustworthy proofs of AI and enables secure integration with Web3. Oraichain is the world's first layer 1 of AI oracle. | Cosmos | [@oraichain](https://x.com/oraichain) | `Growth` |
+| [Viction](https://www.viction.xyz/) | Viction, formerly Tomochain, is a people-centric blockchain, offering zero-gas transactions and enhanced security to make Web3 easy and safe for everyone. | EVM | [@BuildOnViction](https://x.com/BuildOnViction) | `Growth` |
+| [Ancient8](https://ancient8.gg/) | Ancient8 Chain is a gaming-focused community-driven Ethereum Layer 2, powered by the OP Stack and enhanced with Celestia, specifically tailored to tackle the scalability and adoption challenges faced by web3 gaming and consumer DApps. | EVM, Cosmos | [@Ancient8_gg](https://x.com/Ancient8_gg) | `Growth` |
 
 ### DeFi
 
 | Project                              | Description                                                                                             | Eco         | X                                             | Status   |
 | ------------------------------------ | ------------------------------------------------------------------------------------------------------- | ----------- | --------------------------------------------- | -------- |
 | [Kyber Network](https://kyber.network/) | Kyber Network is a multi-chain crypto trading and liquidity hub that connects liquidity from different sources to enable trades at the best rates. | EVM, Solana | [@KyberNetwork](https://x.com/KyberNetwork) | `OG` |
+| [Birdeye](https://birdeye.so/) | An on-chain crypto trading data aggregator. Providing fair access to investment opportunities for all traders. | EVM, Solana, Sui | [@birdeye_so](https://x.com/birdeye_so) | `Growth` |
 | [Krystal](https://krystal.app/) | Krystal’s mission is to make Liquidity Provisioning Profitable, Accessible, and Convenient to Anyone. | EVM | [@KrystalDeFi](https://x.com/KrystalDeFi) | `Growth` |
 | [Harmonix Finance](https://harmonix.fi/) | Harmonix is a sophisticated platform that brings hedge fund strategies on-chain to generate high yields for investors. Using the latest decentralized finance (DeFi) technologies, Harmonix provides a secure and transparent environment where both seasoned traders and newcomers can invest with confidence. | EVM | [@HarmonixFi](https://x.com/harmonixfi) | `Seed` |
 | [BSX](https://www.bsx.exchange/) | Optimized trading engine built for traders and powered by next-generation decentralized blockchain infrastructure enabling low fees and deep liquidity - built by traders, for traders. | Base/EVM | [@bsx_labs](https://x.com/bsx_labs) | `Growth` |
@@ -21,8 +24,6 @@
 | [EnsoFi](https://ensofi.xyz/) | EnsoFi is the first decentralised peer-to-peer cross-chain lending platform, giving users the ability to lend on one chain while collateralising on other chain. | Solana, Sui, Monad | [@Ensofi_xyz](https://x.com/Ensofi_xyz) | `Seed` |
 
 ### Consumer Cryptos
-
-
 
 ## NFTs
 
@@ -38,9 +39,15 @@
 
 ### R&D
 
+
+
 ### Trading
 
+
+
 ## Developer Resources
+
+
 
 ### Documentation
 
