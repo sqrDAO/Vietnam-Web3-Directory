@@ -10,10 +10,9 @@
 | [Aura Network](https://aura.network) | Aura Network is an Abstraction Layer for Intellectual Property (IP), aiming to revolutionize RWA areas. | EVM, Cosmos | [@AuraNetworkHQ](https://x.com/AuraNetworkHQ) | `Mainnet` |
 | [Oraichain](https://orai.io/) | Oraichain provides multidimensional trustworthy proofs of AI and enables secure integration with Web3. Oraichain is the world's first layer 1 of AI oracle. | Cosmos | [@oraichain](https://x.com/oraichain) | `Mainnet` |
 | [Viction](https://www.viction.xyz/) | Viction, formerly Tomochain, is a people-centric blockchain, offering zero-gas transactions and enhanced security to make Web3 easy and safe for everyone. | EVM | [@BuildOnViction](https://x.com/BuildOnViction) | `Mainnet` |
-| [Ancient8](https://ancient8.gg/) | Ancient8 Chain is a gaming-focused community-driven Ethereum Layer 2, powered by the OP Stack and enhanced with Celestia, specifically tailored to tackle the scalability and adoption challenges faced by web3 gaming and consumer DApps. | EVM, Cosmos | [@Ancient8_gg](https://x.com/Ancient8_gg) | `Mainnet` |
+| [Ancient8](https://ancient8.gg/) | Ancient8 Chain is a gaming-focused community-driven Ethereum Layer 2, powered by the OP Stack and enhanced with Celestia, specifically tailored to tackle the scalability and adoption challenges faced by web3 gaming and consumer DApps. | EVM | [@Ancient8_gg](https://x.com/Ancient8_gg) | `Mainnet` |
 | [Mirai Labs](https://mirailabs.co/) | One of Vietnam's top mobile game development studios known for generating $200M in trading volume in its first ever blockchain title. | EVM/AVAX | [@themirailabs](https://x.com/themirailabs) | `Mainnet` |
-| [Funkichain](https://funkichain.com/) | Funki is an L2 Ethereum Rollup Network, powered by the OP Stack, part of the Superchain, leveraging OP Plasma Mode and secured by Ethereum - is A Playground for the next Digital Pop Culture. 
- | EVM | [@funkichain](https://x.com/funkichain) | `Testnet` |
+| [Funkichain](https://funkichain.com/) | Funki is an L2 Ethereum Rollup Network, powered by the OP Stack, part of the Superchain, leveraging OP Plasma Mode and secured by Ethereum - is A Playground for the next Digital Pop Culture. | EVM | [@funkichain](https://x.com/funkichain) | `Testnet` |
  | [ZERO Network](https://zero.network/) | ZERϴ Network is the first EVM-compatible rollup that eliminates the need for gas entirely within the network. | EVM | [@zerodotnetwork](https://x.com/zerodotnetwork) | `Testnet` |
 
 ### DeFi
@@ -22,14 +21,13 @@
 | ------------------------------------ | ------------------------------------------------------------------------------------------------------- | ----------- | --------------------------------------------- | -------- |
 | [Kyber Network](https://kyber.network/) | Kyber Network is a multi-chain crypto trading and liquidity hub that connects liquidity from different sources to enable trades at the best rates. | EVM, Solana | [@KyberNetwork](https://x.com/KyberNetwork) | `OG` |
 | [Birdeye](https://birdeye.so/) | An on-chain crypto trading data aggregator. Providing fair access to investment opportunities for all traders. | EVM, Solana, Sui | [@birdeye_so](https://x.com/birdeye_so) | `Growth` |
-| [Holdstation](https://holdstation.com/) | Holdstation is a decentralized platform centered around a smart-contract wallet that offers futures trading on zkSync Era. | [@HoldstationW](https://x.com/HoldstationW) | `Growth` |
+| [Holdstation](https://holdstation.com/) | Holdstation is a decentralized platform centered around a smart-contract wallet that offers futures trading on zkSync Era. | ZKSync | [@HoldstationW](https://x.com/HoldstationW) | `Growth` |
 | [Krystal](https://krystal.app/) | Krystal’s mission is to make Liquidity Provisioning Profitable, Accessible, and Convenient to Anyone. | EVM | [@KrystalDeFi](https://x.com/KrystalDeFi) | `Growth` |
 | [Harmonix Finance](https://harmonix.fi/) | Harmonix is a sophisticated platform that brings hedge fund strategies on-chain to generate high yields for investors. Using the latest decentralized finance (DeFi) technologies, Harmonix provides a secure and transparent environment where both seasoned traders and newcomers can invest with confidence. | EVM | [@HarmonixFi](https://x.com/harmonixfi) | `Seed` |
 | [BSX](https://www.bsx.exchange/) | Optimized trading engine built for traders and powered by next-generation decentralized blockchain infrastructure enabling low fees and deep liquidity - built by traders, for traders. | Base/EVM | [@bsx_labs](https://x.com/bsx_labs) | `Growth` |
 | [Copin](https://copin.io/) | Copin.io is a platform designed for the mass adoption of the perpetual DEX narrative. It enables users to explore, analyze, and copy on-chain traders from the top of Perpetual DEXs including dYdx, GMX, Kwenta, etc. | EVM | [@Copin_io](https://x.com/Copin_io) | `Growth` |
 | [EnsoFi](https://ensofi.xyz/) | EnsoFi is the first decentralised peer-to-peer cross-chain lending platform, giving users the ability to lend on one chain while collateralising on other chain. | Solana, Sui, Monad | [@Ensofi_xyz](https://x.com/Ensofi_xyz) | `Seed` |
-| [NerdAI](https://www.thedatanerd.io/) | NerdAI is The first AI On-chain analytics Assistant, empowered by 
-@Onchaindatanerd. | EVM | [@0xNerdAI](https://x.com/0xNerdAI) | `Growth` |
+| [NerdAI](https://www.thedatanerd.io/) | NerdAI is The first AI On-chain analytics Assistant, empowered by @Onchaindatanerd. | EVM | [@0xNerdAI](https://x.com/0xNerdAI) | `Growth` |
 
 
 ### Gaming
