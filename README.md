@@ -49,7 +49,7 @@
 
 | Project                              | Description                                                                                             | Eco         | X                                             | Status   |
 | ------------------------------------ | ------------------------------------------------------------------------------------------------------- | ----------- | --------------------------------------------- | -------- |
-| [XomNFT](https://t.me/xomnftchat) | TBC | EVM, Solana, Sui, Monad | [@xomnft_](https://x.com/xomnft_) | `Active` |
+| [XomNFT](https://t.me/xomnftchat) | XomNFT is the #1 NFT public good brand based in Vietnam. We love NFTs and all NFT-related crypto things and would love to turn our NFT alphas become public goods in many forms (content, dashboards, community, etc) and share them to all  NFT folks in the space. | EVM, Solana, Sui, Monad | [@xomnft_](https://x.com/xomnft_) | `Active` |
 | [Pyra Aliens](https://discord.gg/pyraresearch) | Pyra Aliens is a community-driven brand that aspires to redefine the existing structure of the web3 community. | EVM, Solana, Sui, Aptos, Monad | [@pyraaliens](https://x.com/pyraaliens) | `Active` |
 | [AANC](https://link3.to/aanc) | AANC (AntiAntiNFTs Club) is a powerhouse NFT DAO established in Vietnam in 2021, now growing rapidly across Asia in regions like Hong Kong & Thailand. | EVM | [@AANC_Official](https://x.com/AANC_Official) | `Active` |
 
