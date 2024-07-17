@@ -72,7 +72,8 @@
 
 | Project                              | Description                                                                                             | Eco         | X                                             | Investing Stage |
 | ------------------------------------ | ------------------------------------------------------------------------------------------------------- | ----------- | --------------------------------------------- | -------- |
-| [Caliber](https://caliber.build/) | Caliber is a Web3 Venture Builder started by veteran Web3 builders to develop the next generation of Web3 startups with new founders. Our main focus is building innovative Web3 products, particularly in Consumer Applications, DeFi Primitives, and Infrastructures. | EVM, Solana | [@CaliberBuild](https://x.com/CaliberBuild) | `Early-stage` |
+| [Caliber Venture Builder](https://caliber.build/) | Caliber is a Web3 Venture Builder started by veteran Web3 builders to develop the next generation of Web3 startups with new founders. Our main focus is building innovative Web3 products, particularly in Consumer Applications, DeFi Primitives, and Infrastructures. | EVM, Solana | [@CaliberBuild](https://x.com/CaliberBuild) | `Early-stage` |
+| [Vamient Capital](https://vamient.xyz/) | Vamient Capital is a token and NFT market maker within the cryptocurrency ecosystem. We are a quantitative team at heart, with tenured experiences from global investment banks and high-frequency trading firms. | EVM, Solana | [@VamientLabs](https://x.com/VamientLabs) | `Early-stage, Growth` |
 
 ### Communities
 
