@@ -44,6 +44,7 @@
 | Project                              | Description                                                                                             | Eco         | X                                             | Status   |
 | ------------------------------------ | ------------------------------------------------------------------------------------------------------- | ----------- | --------------------------------------------- | -------- |
 | [Zerion Wallet](https://zerion.io/) | Zerion is a crypto wallet for everything onchain so you can manage all your investments, collections, staked positions and airdrops across 14 chains. | EVM | [@zerion](https://x.com/zerion) | `Growth` |
+| [OWallet](https://owallet.dev/) | OWallet focuses on universal digital assets management on most liqudity blockchains as BTC, EVM-based & Cosmos-based (100+ blockchains). | BTC, EVM, Cosmos eco-system, TRON | [@owallet_dev](https://x.com/owallet_dev) | `Growth` |
 
 ### NFTs
 
