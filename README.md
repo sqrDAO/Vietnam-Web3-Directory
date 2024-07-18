@@ -60,7 +60,7 @@
 | Project                              | Description                                                                                             | Eco         | X                                             | Status   |
 | ------------------------------------ | ------------------------------------------------------------------------------------------------------- | ----------- | --------------------------------------------- | -------- |
 | [Inferium](https://www.inferium.io/) | Inferium is a ML-driven intelligent store and aggregator for AI inference. It empower developers to seamlessly verify, deploy, and list their AI models. | EVM | [@InferiumAI](https://x.com/InferiumAI) | `Pre-Launch` |
-| [GAIA](https://protogaia.com/) | GAIA - Generative AI Abilities for mankind - is a collaborative multi-modality AI platform, with an ambitious movement to give human and AI agents superpowers, uncensored & equitable. | EVM |  | `Pre-Launch` |
+| [GAIA](https://protogaia.com/) | GAIA - Generative AI Abilities for mankind - is a collaborative multi-modality AI platform, with an ambitious movement to give human and AI agents superpowers, uncensored & equitable. | EVM | [@beginGAIA](https://x.com/beginGAIA) | `Pre-Launch` |
 
 #### Onramps
 
