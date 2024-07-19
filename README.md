@@ -44,7 +44,7 @@
 | Project                              | Description                                                                                             | Eco         | X                                             | Status   |
 | ------------------------------------ | ------------------------------------------------------------------------------------------------------- | ----------- | --------------------------------------------- | -------- |
 | [Zerion Wallet](https://zerion.io/) | Zerion is a crypto wallet for everything onchain so you can manage all your investments, collections, staked positions and airdrops across 14 chains. | EVM | [@zerion](https://x.com/zerion) | `Growth` |
-| [OWallet](https://owallet.dev/) | OWallet focuses on universal digital assets management on most liqudity blockchains as BTC, EVM-based & Cosmos-based (100+ blockchains). | BTC, EVM, Cosmos eco-system, TRON | [@owallet_dev](https://x.com/owallet_dev) | `Growth` |
+| [OWallet](https://owallet.dev/) | OWallet focuses on universal digital assets management on most liqudity blockchains as BTC, EVM-based & Cosmos-based (100+ blockchains). | BTC, EVM, Cosmos, TRON | [@owallet_dev](https://x.com/owallet_dev) | `Growth` |
 
 ### NFTs
 
@@ -61,7 +61,7 @@
 | Project                              | Description                                                                                             | Eco         | X                                             | Status   |
 | ------------------------------------ | ------------------------------------------------------------------------------------------------------- | ----------- | --------------------------------------------- | -------- |
 | [Inferium](https://www.inferium.io/) | Inferium is a ML-driven intelligent store and aggregator for AI inference. It empower developers to seamlessly verify, deploy, and list their AI models. | EVM | [@InferiumAI](https://x.com/InferiumAI) | `Pre-Launch` |
-| [GAIA](https://protogaia.com/) | GAIA - Generative AI Abilities for mankind - is a collaborative multi-modality AI platform, with an ambitious movement to give human and AI agents superpowers, uncensored & equitable. | EVM |  | `Pre-Launch` |
+| [GAIA](https://protogaia.com/) | GAIA - Generative AI Abilities for mankind - is a collaborative multi-modality AI platform, with an ambitious movement to give human and AI agents superpowers, uncensored & equitable. | EVM | [@beginGAIA](https://x.com/beginGAIA) | `Pre-Launch` |
 
 #### Onramps
 
@@ -73,7 +73,8 @@
 
 | Project                              | Description                                                                                             | Eco         | X                                             | Investing Stage |
 | ------------------------------------ | ------------------------------------------------------------------------------------------------------- | ----------- | --------------------------------------------- | -------- |
-| [Caliber](https://caliber.build/) | Caliber is a Web3 Venture Builder started by veteran Web3 builders to develop the next generation of Web3 startups with new founders. Our main focus is building innovative Web3 products, particularly in Consumer Applications, DeFi Primitives, and Infrastructures. | EVM, Solana | [@CaliberBuild](https://x.com/CaliberBuild) | `Early-stage` |
+| [Caliber Venture Builder](https://caliber.build/) | Caliber is a Web3 Venture Builder started by veteran Web3 builders to develop the next generation of Web3 startups with new founders. Our main focus is building innovative Web3 products, particularly in Consumer Applications, DeFi Primitives, and Infrastructures. | EVM, Solana | [@CaliberBuild](https://x.com/CaliberBuild) | `Early-stage` |
+| [Vamient Capital](https://vamient.xyz/) | Vamient Capital is a token and NFT market maker within the cryptocurrency ecosystem. We are a quantitative team at heart, with tenured experiences from global investment banks and high-frequency trading firms. | EVM, Solana | [@VamientLabs](https://x.com/VamientLabs) | `Early-stage, Growth` |
 
 ### Communities
 
