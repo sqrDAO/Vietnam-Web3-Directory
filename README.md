@@ -44,6 +44,7 @@
 | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- | ----------------------------------------- | -------- | ------- |
 | [Zerion Wallet](https://zerion.io/) | Zerion is a crypto wallet for everything onchain so you can manage all your investments, collections, staked positions and airdrops across 14 chains. | EVM                    | [@zerion](https://x.com/zerion)           | `Growth` |
 | [OWallet](https://owallet.dev/)     | OWallet focuses on universal digital assets management on most liqudity blockchains as BTC, EVM-based & Cosmos-based (100+ blockchains).              | BTC, EVM, Cosmos, TRON | [@owallet_dev](https://x.com/owallet_dev) | `Growth` |
+| [GMGN Wallet](https://gmgn.app/)    | Probably the fastest* web only onboarding EVM wallet using Passkeys / *: yet to be disputed                                                           | EVM                    | [@gmgnHQ](https://x.com/gmgnHQ)           | `Growth` | [zxstim](https://x.com/zxstim)
 
 ### NFTs
 
