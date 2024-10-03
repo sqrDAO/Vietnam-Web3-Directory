@@ -54,6 +54,12 @@
 | [Pyra Aliens](https://discord.gg/pyraresearch) | Pyra Aliens is a community-driven brand that aspires to redefine the existing structure of the web3 community.                                                                                                                                                      | EVM, Solana, Sui, Aptos, Monad | [@pyraaliens](https://x.com/pyraaliens)       | `Active` | [YoYo](https://x.com/yoyopyra) <br/> [Johun](https://x.com/johunvn) |
 | [AANC](https://link3.to/aanc)                  | AANC (AntiAntiNFTs Club) is a powerhouse NFT DAO established in Vietnam in 2021, now growing rapidly across Asia in regions like Hong Kong & Thailand.                                                                                                              | EVM                            | [@AANC_Official](https://x.com/AANC_Official) | `Active` | [Tin Lam](https://x.com/Tin_jpeg) <br/> [Kate Pham](https://x.com/katedaynee) |
 
+### Analytics and Data
+
+| Project                                | Description                                                                                                                                                                                                                                                                                                  | Eco                    | X                                             | Status   | Founders                                    |
+| -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------- | --------------------------------------------- | -------- | ------------------------------------------- |
+| [Nimbus](https://app.getnimbus.io/)    | Portfolio tracker for Non-EVM chains. Get your in-deep wallet analysis, optimize your earning                                                                                                                                                        | Solana, TON, SUI, EVM                    | [@Nimbus](https://x.com/get_nimbus)               | `Growth`  | [Thanh Le](https://x.com/0xthanhle) <br/> [Toan Nhu](https://x.com/toannhu21096) |
+
 ### Others
 
 #### AI x Crypto
@@ -82,8 +88,6 @@
 | [Superteam Vietnam](https://vn.superteam.fun/) | ​​​​​Superteam Vietnam is a community of founders, builders and creative artists in Vietnam. Our goal is to raise the quality of Vietnamese builders, specifically on Solana blockchain.            | Solana      | [@SuperteamVN](https://x.com/SuperteamVN) | `Active` | [Anh Tran](https://x.com/SaigonButcher) |
 
 ### Services
-
-### Analytics and Data
 
 ## Contributions
 
