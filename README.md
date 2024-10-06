@@ -85,6 +85,10 @@
 
 ### Analytics and Data
 
+| Project                                        | Description                                                                                                                                                                                         | Eco         | X                                         | Status   | Founders |
+| ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ----------------------------------------- | -------- | ------- |
+| [Formo](https://formo.so/)                  | Formo is a forms and product analytics tool designed for onchain builders. Spend less time building analytics, and more time building products. | EVM | [@getFormo](https://x.com/getformo)           | `Early` | [Yos Riady](https://x.com/yosriady) |
+
 ## Contributions
 
 This is a community-curated list of Vietnam Web3-related projects, initiated and maintained by sqrDAO and Aura Network. If you have a project that you would like to add, please match or improve upon the format of the existing entries.
