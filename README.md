@@ -90,11 +90,7 @@
 
 ### Services
 
-### Analytics and Data
-
-| Project                                        | Description                                                                                                                                                                                         | Eco         | X                                         | Status   | Founders |
-| ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ----------------------------------------- | -------- | ------- |
-| [Formo](https://formo.so/)                  | Formo is a forms and product analytics tool designed for onchain builders. Spend less time building analytics, and more time building products. | EVM | [@getFormo](https://x.com/getformo)           | `Early` | [Yos Riady](https://x.com/yosriady) |
+To be updated...
 
 ## Contributions
 
