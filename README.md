@@ -60,7 +60,7 @@
 | Project                                | Description                                                                                                                                                                                                                                                                                                  | Eco                    | X                                             | Status   | Founders                                    |
 | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------- | --------------------------------------------- | -------- | ------------------------------------------- |
 | [Nimbus](https://app.getnimbus.io/)    | Portfolio tracker for Non-EVM chains. Get your in-deep wallet analysis, optimize your earning                                                                                                                                                        | Solana, TON, SUI, EVM                    | [@Nimbus](https://x.com/get_nimbus)               | `Growth`  | [Thanh Le](https://x.com/0xthanhle) <br/> [Toan Nhu](https://x.com/toannhu21096) |
-
+| [Formo](https://formo.so/)                  | Formo is a forms and product analytics tool designed for onchain builders. Spend less time building analytics, and more time building products. | EVM | [@getFormo](https://x.com/getformo)           | `Early` | [Yos Riady](https://x.com/yosriady) |
 ### Others
 
 #### AI x Crypto
