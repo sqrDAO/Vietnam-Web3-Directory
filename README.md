@@ -40,10 +40,11 @@
 
 ### Social/Consumer
 
-| Project                                | Description                                                                                                                                                                                                                                                                                                  | Eco                    | X                                             | Status   | Founders                                    |
-| -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------- | --------------------------------------------- | -------- | ------------------------------------------- |
-| [Zerion Wallet](https://zerion.io/)    | Zerion is a crypto wallet for everything onchain so you can manage all your investments, collections, staked positions and airdrops across 14 chains.                                                                                                                                                        | EVM                    | [@zerion](https://x.com/zerion)               | `Growth` |
-| [OWallet](https://owallet.dev/)        | OWallet focuses on universal digital assets management on most liqudity blockchains as BTC, EVM-based & Cosmos-based (100+ blockchains).                                                                                                                                                                     | BTC, EVM, Cosmos, TRON | [@owallet_dev](https://x.com/owallet_dev)     | `Growth` |
+| Project                             | Description                                                                                                                                           | Eco                    | X                                         | Status   | Founders |
+| ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- | ----------------------------------------- | -------- | ------- |
+| [Zerion Wallet](https://zerion.io/) | Zerion is a crypto wallet for everything onchain so you can manage all your investments, collections, staked positions and airdrops across 14 chains. | EVM                    | [@zerion](https://x.com/zerion)           | `Growth` |
+| [OWallet](https://owallet.dev/)     | OWallet focuses on universal digital assets management on most liqudity blockchains as BTC, EVM-based & Cosmos-based (100+ blockchains).              | BTC, EVM, Cosmos, TRON | [@owallet_dev](https://x.com/owallet_dev) | `Growth` |
+| [GMGN Wallet](https://gmgn.app/)    | Probably the fastest* web only onboarding EVM wallet using Passkeys / *: yet to be disputed                                                           | EVM                    | [@gmgnHQ](https://x.com/gmgnHQ)           | `Early` | [zxstim](https://x.com/zxstim) |
 | [Sightsea](https://www.sightsea.tech/) | Sightsea is an AI-powered decentralized social platform that leverages DePIN technology to ensure the highest level of user information security. By empowering communities and experts, Sightsea builds trust, drives engagement, and unlocks value within a truly decentralized and intelligent ecosystem. | EVM                    | [@Sightsea_Tech](https://x.com/Sightsea_Tech) | `Growth` | [John Trinh](https://x.com/JohnTrinhKretos) |
 
 ### NFTs
@@ -88,6 +89,12 @@
 | [Superteam Vietnam](https://vn.superteam.fun/) | ​​​​​Superteam Vietnam is a community of founders, builders and creative artists in Vietnam. Our goal is to raise the quality of Vietnamese builders, specifically on Solana blockchain.            | Solana      | [@SuperteamVN](https://x.com/SuperteamVN) | `Active` | [Anh Tran](https://x.com/SaigonButcher) |
 
 ### Services
+
+### Analytics and Data
+
+| Project                                        | Description                                                                                                                                                                                         | Eco         | X                                         | Status   | Founders |
+| ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ----------------------------------------- | -------- | ------- |
+| [Formo](https://formo.so/)                  | Formo is a forms and product analytics tool designed for onchain builders. Spend less time building analytics, and more time building products. | EVM | [@getFormo](https://x.com/getformo)           | `Early` | [Yos Riady](https://x.com/yosriady) |
 
 ## Contributions
 
