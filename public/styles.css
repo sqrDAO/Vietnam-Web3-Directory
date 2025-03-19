@@ -1,22 +1,20 @@
 :root {
     --primary-color: #1E1E2F; /* Dark blue for headers and backgrounds */
-    --secondary-color: #F5F5F5; /* Light gray for backgrounds */
+    --secondary-color: rgba(245, 245, 245, 0.9); /* Light gray with reduced opacity */
     --accent-color: #FFCC00; /* Yellow for highlights */
-    --text-color: #333333; /* Dark text for readability */
+    --text-color: #FFFFFF; /* Change text color to white for better contrast */
+    --subtext-color: #333333; /* Darker gray for subtext */
 }
 
 body {
     font-family: 'Inter', Arial, sans-serif; /* Clean font */
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Light background for contrast */
-    color: var(--text-color); /* Use defined text color */
+    background-color: rgba(244, 244, 244, 0.8); /* Light background with reduced brightness */
+    color: var(--subtext-color); /* Change body text color to a darker gray */
     line-height: 1.6; /* Improve readability */
-}
-
-header {
-    padding: 20px 0;
-    text-align: center;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
 }
 
 h1, h2, h3 {
@@ -27,10 +25,11 @@ h1 {
     margin: 20px 0; /* Margin for main heading */
     text-align: center; /* Center align main heading */
     font-size: 2.5em; /* Main heading size */
+    color: var(--text-color); /* Change main heading color */
 }
 
 h2 {
-    color: #c8102e; /* Red color for category headers */
+    color: var(--primary-color); /* Change category headers to accent color */
     margin-top: 20px; /* Space above category headers */
     margin-bottom: 10px; /* Space below category headers */
     font-size: 2em; /* Category heading size */
@@ -39,72 +38,45 @@ h2 {
 h3 {
     margin: 0 0 10px; /* Margin for the heading */
     font-size: 1.5em; /* Subheading size */
+    color: var(--subtext-color); /* Change subheading color */
 }
 
 main {
-    padding: 20px;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-th, td {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 12px;
-}
-
-th {
-    background-color: #c8102e; /* Red color for table headers */
-    color: #ffcc00; /* Yellow text for table headers */
-}
-
-td {
-    background-color: #ffffff; /* White background for table cells */
-}
-
-td a {
-    color: #c8102e; /* Red color for links */
-    text-decoration: none;
-}
-
-td a:hover {
-    text-decoration: underline; /* Underline on hover for links */
+    flex: 1; /* Allow main to grow and take available space */
+    padding: 20px; /* Add padding for main content */
 }
 
 footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #c8102e; /* Red color for footer */
-    color: #ffcc00; /* Yellow text for footer */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #000; /* Background color for visibility */
+    color: white; /* Text color */
+    text-align: center; /* Center text */
 }
 
 .card-container {
     display: flex; /* Use flexbox for layout */
     flex-wrap: wrap; /* Allow cards to wrap to the next line if necessary */
-    justify-content: space-between; /* Space between cards */
     margin: 20px 0; /* Margin above and below the card container */
 }
 
 .card {
-    border: 1px solid #e0e0e0; /* Light gray border */
+    background-color: #FFFFFF; /* White background */
+    border: 1px solid #E0E0E0; /* Light border */
     border-radius: 8px; /* Rounded corners */
-    padding: 20px; /* Padding inside the card */
+    padding: 20px; /* Padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s; /* Smooth transition */
     margin: 10px; /* Margin around each card */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    background-color: #ffffff; /* White background */
-    transition: transform 0.2s; /* Smooth transition for hover effect */
     flex: 1 1 calc(33.33% - 20px); /* Set to take up 1/3 of the container width minus margin */
     max-width: calc(33.33% - 20px); /* Set a maximum width for the card */
     box-sizing: border-box; /* Ensure padding and border are included in the width */
 }
 
 .card:hover {
-    transform: translateY(-5px); /* Slightly lift the card on hover */
+    transform: scale(1.02); /* Slightly enlarge on hover */
 }
 
 p {
@@ -180,7 +152,7 @@ p {
 }
 
 .button {
-    background-color: var(--primary-color); /* Primary color */
+    background-color: #00aaff; /* Change to a blue color */
     color: #ffffff; /* White text color */
     border: none; /* No border */
     border-radius: 4px; /* Rounded corners */
@@ -188,10 +160,11 @@ p {
     font-size: 16px; /* Font size */
     cursor: pointer; /* Pointer cursor */
     transition: background-color 0.3s; /* Smooth background transition */
+    margin-top: 20px; /* Space above the button */
 }
 
 .button:hover {
-    background-color: var(--accent-color); /* Change color on hover */
+    background-color: #0077cc; /* Darker blue on hover */
 }
 
 .header {
@@ -199,50 +172,48 @@ p {
     background-image: url('img/tron-le-wUk2U5Wirxg-unsplash.jpg');
     background-size: cover;
     background-position: center;
-    padding: 40px 20px;
-    height: 300px; /* Ensure the height is sufficient */
+    background-repeat: no-repeat;
+    padding: 40px 20px; /* Adjust padding for better spacing */
+    height: 300px; /* Set height back to previous value */
     display: flex; /* Use flexbox for layout */
     flex-direction: column; /* Stack items vertically */
     justify-content: center; /* Center items vertically */
     align-items: center; /* Center items horizontally */
     text-align: center;
-    color: #ffffff; /* Set header text color to white for better contrast */
-    filter: brightness(0.7); /* Darken the background image */
+    color: var(--text-color); /* Set header text color to white for better contrast */
 }
 
-.header::before {
-    content: ""; /* Create an empty pseudo-element */
-    position: absolute; /* Position it absolutely */
+.header::after {
+    content: ""; /* Create a pseudo-element for overlay */
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
-    z-index: 1; /* Place it behind the text */
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay to reduce brightness */
+    z-index: 1; /* Ensure overlay is above the background */
 }
 
-.header h1, .header p, .header .built-by {
-    position: relative; /* Position relative to stack above the overlay */
+.header h1, .header p {
+    position: relative; /* Position relative for text */
     z-index: 2; /* Ensure text is above the overlay */
 }
 
 .header h1 {
     font-family: 'Arial', sans-serif;
-    font-size: 4em; /* Increased size for the main heading */
-    color: #ffcc00; /* Yellow for better visibility against the background */
+    font-size: 2.5em; /* Set back to previous size for the main heading */
+    margin: 20px 0; /* Margin for main heading */
 }
 
 .header p {
     font-family: 'Arial', sans-serif;
-    font-size: 1.5em; /* Increased size for the paragraph */
+    font-size: 1.5em; /* Set back to previous size for the paragraph */
     margin: 10px 0;
-    color: #ffffff; /* Set paragraph text color to white */
+    color: var(--text-color); /* Set paragraph text color to white */
 }
 
-.header img {
-    width: 100px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
-    margin-top: 10px; /* Space between text and image */
+.header a {
+    z-index: 2;
 }
 
 .header .built-by {
@@ -251,5 +222,49 @@ p {
 }
 
 .header .built-by p {
+    margin: 0; /* Remove default margin */
+}
+
+.header .built-by img {
+    margin-left: 10px; /* Add left margin to create space */
+    width: 60px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    opacity: 1; /* Ensure opacity is set to 1 */
+    filter: none; /* Remove any filters that might grey it out */
+    z-index: 2;
+}
+
+/* Styling for the search bar */
+.search-bar {
+    border: 2px solid #4A90E2; /* Change border color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px; /* Padding for better spacing */
+    font-size: 16px; /* Font size */
+    width: 100%; /* Full width */
+}
+
+/* Styling for card titles */
+.card-title {
+    font-size: 18px; /* Title font size */
+    font-weight: bold; /* Bold title */
+    color: var(--primary-color); /* Change card title color */
+}
+
+/* Styling for card descriptions */
+.card-description {
+    font-size: 14px; /* Description font size */
+    color: var(--subtext-color); /* Change card description color */
+}
+
+.sqrdao-logo {
+    width: 60px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 10px; /* Space between text and image */
+    opacity: 1; /* Ensure opacity is set to 1 */
+    filter: none; /* Remove any filters that might grey it out */
+}
+
+html, body {
+    height: 100%; /* Ensure the body takes the full height */
     margin: 0; /* Remove default margin */
 }
