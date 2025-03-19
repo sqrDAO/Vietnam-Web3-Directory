@@ -1,0 +1,255 @@
+:root {
+    --primary-color: #1E1E2F; /* Dark blue for headers and backgrounds */
+    --secondary-color: #F5F5F5; /* Light gray for backgrounds */
+    --accent-color: #FFCC00; /* Yellow for highlights */
+    --text-color: #333333; /* Dark text for readability */
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif; /* Clean font */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background for contrast */
+    color: var(--text-color); /* Use defined text color */
+    line-height: 1.6; /* Improve readability */
+}
+
+header {
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: var(--primary-color); /* Use primary color for headings */
+}
+
+h1 {
+    margin: 20px 0; /* Margin for main heading */
+    text-align: center; /* Center align main heading */
+    font-size: 2.5em; /* Main heading size */
+}
+
+h2 {
+    color: #c8102e; /* Red color for category headers */
+    margin-top: 20px; /* Space above category headers */
+    margin-bottom: 10px; /* Space below category headers */
+    font-size: 2em; /* Category heading size */
+}
+
+h3 {
+    margin: 0 0 10px; /* Margin for the heading */
+    font-size: 1.5em; /* Subheading size */
+}
+
+main {
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 12px;
+}
+
+th {
+    background-color: #c8102e; /* Red color for table headers */
+    color: #ffcc00; /* Yellow text for table headers */
+}
+
+td {
+    background-color: #ffffff; /* White background for table cells */
+}
+
+td a {
+    color: #c8102e; /* Red color for links */
+    text-decoration: none;
+}
+
+td a:hover {
+    text-decoration: underline; /* Underline on hover for links */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #c8102e; /* Red color for footer */
+    color: #ffcc00; /* Yellow text for footer */
+}
+
+.card-container {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow cards to wrap to the next line if necessary */
+    justify-content: space-between; /* Space between cards */
+    margin: 20px 0; /* Margin above and below the card container */
+}
+
+.card {
+    border: 1px solid #e0e0e0; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the card */
+    margin: 10px; /* Margin around each card */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: #ffffff; /* White background */
+    transition: transform 0.2s; /* Smooth transition for hover effect */
+    flex: 1 1 calc(33.33% - 20px); /* Set to take up 1/3 of the container width minus margin */
+    max-width: calc(33.33% - 20px); /* Set a maximum width for the card */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Slightly lift the card on hover */
+}
+
+p {
+    margin: 5px 0; /* Margin for paragraphs */
+}
+
+.filter-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 20px; /* Space below the filter */
+    padding: 10px; /* Add padding for better spacing */
+    background-color: var(--secondary-color); /* Light gray background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+#search-input {
+    flex: 2; /* Allow the search input to grow more */
+    padding: 12px; /* Padding inside the input */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    margin-right: 10px; /* Space between input and select */
+}
+
+#category-filter {
+    flex: 1; /* Allow the category filter to grow */
+    padding: 12px; /* Padding inside the select */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    margin-right: 10px; /* Space between select and button */
+}
+
+#category-filter option {
+    padding: 10px; /* Padding for options */
+}
+
+.loading {
+    text-align: center;
+    font-size: 18px;
+    color: white; /* Change to white for better visibility */
+    /* Alternatively, use color: transparent; for transparency */
+}
+
+:focus {
+    outline: 2px solid #c8102e; /* Highlight focused elements */
+}
+
+@media (max-width: 768px) {
+    .filter-container {
+        flex-direction: column; /* Stack elements on smaller screens */
+    }
+
+    #search-input, #category-filter {
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 10px; /* Add bottom margin */
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .card {
+        flex: 1 1 calc(50% - 20px); /* Adjust to 50% width on smaller screens */
+        max-width: calc(50% - 20px); /* Set a maximum width for the card */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex: 1 1 100%; /* Full width on very small screens */
+        max-width: 100%; /* Ensure maximum width is 100% */
+    }
+}
+
+.button {
+    background-color: var(--primary-color); /* Primary color */
+    color: #ffffff; /* White text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 12px 24px; /* Padding */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.button:hover {
+    background-color: var(--accent-color); /* Change color on hover */
+}
+
+.header {
+    position: relative; /* Position relative for the overlay */
+    background-image: url('img/tron-le-wUk2U5Wirxg-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px 20px;
+    height: 300px; /* Ensure the height is sufficient */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center;
+    color: #ffffff; /* Set header text color to white for better contrast */
+    filter: brightness(0.7); /* Darken the background image */
+}
+
+.header::before {
+    content: ""; /* Create an empty pseudo-element */
+    position: absolute; /* Position it absolutely */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: 1; /* Place it behind the text */
+}
+
+.header h1, .header p, .header .built-by {
+    position: relative; /* Position relative to stack above the overlay */
+    z-index: 2; /* Ensure text is above the overlay */
+}
+
+.header h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 4em; /* Increased size for the main heading */
+    color: #ffcc00; /* Yellow for better visibility against the background */
+}
+
+.header p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5em; /* Increased size for the paragraph */
+    margin: 10px 0;
+    color: #ffffff; /* Set paragraph text color to white */
+}
+
+.header img {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 10px; /* Space between text and image */
+}
+
+.header .built-by {
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+.header .built-by p {
+    margin: 0; /* Remove default margin */
+}
