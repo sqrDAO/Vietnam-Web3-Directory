@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background for contrast */
+}
+
+header {
+    background: #c8102e; /* Red color of the Vietnam flag */
+    color: #ffcc00; /* Yellow color of the Vietnam flag */
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: #c8102e; /* Red color for category headers */
+    margin-top: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 12px;
+}
+
+th {
+    background-color: #c8102e; /* Red color for table headers */
+    color: #ffcc00; /* Yellow text for table headers */
+}
+
+td {
+    background-color: #ffffff; /* White background for table cells */
+}
+
+td a {
+    color: #c8102e; /* Red color for links */
+    text-decoration: none;
+}
+
+td a:hover {
+    text-decoration: underline; /* Underline on hover for links */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #c8102e; /* Red color for footer */
+    color: #ffcc00; /* Yellow text for footer */
+}

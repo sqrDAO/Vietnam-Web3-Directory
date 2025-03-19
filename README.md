@@ -1,5 +1,53 @@
 # Vietnam Web3 Directory
 
+## Deployment Instructions
+
+To deploy the Vietnam Web3 Directory landing page, follow these steps:
+
+1. **Clone the Repository**:
+   If you haven't already, clone the repository to your local machine using:
+   ```bash
+   git clone <repository-url>
+   cd <repository-directory>
+   ```
+
+2. **Navigate to the Project Directory**:
+   Ensure you are in the project directory where the `index.html`, `styles.css`, and `script.js` files are located.
+
+3. **Open the HTML File**:
+   You can open the `index.html` file directly in your web browser. Simply double-click the file or right-click and select "Open with" and choose your preferred web browser.
+
+4. **Using a Local Server (Optional)**:
+   For a better experience, especially if you plan to use AJAX or fetch data, you can run a local server. Here are a few options:
+   - **Using Python**:
+     - If you have Python installed, you can run a simple HTTP server with:
+       ```bash
+       # For Python 3.x
+       python -m http.server
+       ```
+       Then, open your browser and go to `http://localhost:8000`.
+
+   - **Using Node.js**:
+     - If you have Node.js installed, you can use the `http-server` package:
+       ```bash
+       npm install -g http-server
+       http-server
+       ```
+       Then, open your browser and go to `http://localhost:8080`.
+
+5. **Deploying to a Hosting Service**:
+   If you want to deploy the landing page to a hosting service, you can use platforms like GitHub Pages, Netlify, or Vercel. Here’s a brief overview of how to deploy using GitHub Pages:
+   - Push your code to a GitHub repository.
+   - Go to the repository settings.
+   - Scroll down to the "GitHub Pages" section.
+   - Select the branch you want to deploy (usually `main` or `gh-pages`).
+   - Click "Save" and your site will be published at `https://<username>.github.io/<repository-name>/`.
+
+6. **Access the Landing Page**:
+   Once deployed, you can access your landing page using the URL provided by your hosting service.
+
+Feel free to customize the instructions based on your specific deployment needs or preferences.
+
 ## Sectors
 
 ### Chains
