@@ -117,7 +117,6 @@ document.addEventListener("DOMContentLoaded", function() {
                         <p><strong>Status:</strong> ${formattedStatus}</p>
                         <p><strong>People:</strong> ${project.people}</p>
                 `;
-                console.log("Item Div:", itemDiv.innerHTML);
                 itemContainer.appendChild(itemDiv);
             });
         }
@@ -166,6 +165,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
             if (columns.length >= 5) { // Ensure there are enough columns
                 // Parse the name and website from the first column
+                if (categoryName === "AI x Crypto") {
+                    console.log("Columns:", columns);
+                }
                 const nameWithLink = columns[0];
                 const nameMatch = nameWithLink.match(/\[(.+?)\]\((.+?)\)/); // Match [Name](URL)
 
@@ -189,6 +191,13 @@ document.addEventListener("DOMContentLoaded", function() {
                         console.warn("Insufficient columns for Events category:", line);
                         continue; // Skip this entry if not enough columns
                     }
+                } else if (categoryName === "AI x Crypto") {
+                    if (columns.length >= 5) {
+                        peopleField = "N/A"; // Assuming the Organizers column is the 5th column (index 4)
+                    } else {
+                        console.warn("Insufficient columns for other categories:", line);
+                        continue; // Skip this entry if not enough columns
+                    }
                 } else {
                     if (columns.length >= 6) {
                         peopleField = columns[5]; // Assuming the Founders column is the 6th column (index 5)
@@ -198,11 +207,6 @@ document.addEventListener("DOMContentLoaded", function() {
                     }
                 }
 
-                // Check if peopleField is empty and assign "N/A" if it is
-                if (!peopleField || peopleField.trim() === ' ') {
-                    peopleField = 'N/A';
-                }
-
                 // Format the people field
                 const peopleMatch = peopleField.match(/\[(.+?)\]\((.+?)\)/g); // Match all [Name](URL) formats
                 let formattedPeople = peopleField; // Default to original if no match
@@ -210,7 +214,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 if (peopleMatch) {
                     formattedPeople = peopleMatch.map(person => {
                         const personMatch = person.match(/\[(.+?)\]\((.+?)\)/);
-                        return `<a href="${personMatch[2]}" target="_blank">${personMatch[1]}</a>`;
+                        if (personMatch[2]) {
+                            return `<a href="${personMatch[2]}" target="_blank">${personMatch[1]}</a>`;
+                        } else {
+                            return person; // Return the original person if no match
+                        }
                     }).join(', '); // Join multiple people with a comma
                 }
 
