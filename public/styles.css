@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: 'Inter', Arial, sans-serif; /* Clean font */
+    font-family: "Helvetica Neue", sans-serif; /* Clean font */
     margin: 0;
     padding: 0;
     background-color: rgba(244, 244, 244, 0.8); /* Light background with reduced brightness */
@@ -267,4 +267,24 @@ p {
 html, body {
     height: 100%; /* Ensure the body takes the full height */
     margin: 0; /* Remove default margin */
+}
+
+.cta-button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Inline-block for proper spacing */
+    font-size: 16px; /* Font size */
+    margin: 10px 0; /* Margin */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+    z-index: 2;
+}
+
+.cta-button:hover {
+    background-color: #45a049; /* Darker green on hover */
 }
