@@ -53,8 +53,8 @@ Your Ultimate Guide to the Vibrant Web3 Ecosystem in Vietnam! 🌟
 | Name | Description | Eco | X | Status | Founders |
 |------|-------------|-----|---|--------|----------|
 | [Zerion Wallet](https://zerion.io/) | Zerion is a crypto wallet for everything onchain so you can manage all your investments, collections, staked positions and airdrops across 30+ chains. | Ethereum | [@zerion](https://x.com/zerion) | `Growth` | [Evgeny Yurtaev](https://x.com/evgeth_) <br/> [Alexey Bashlykov](https://x.com/madlabman) |
-| [OWallet](https://owallet.dev/) | OWallet focuses on universal digital assets management on most liquid blockchains including Bitcoin, Ethereum-based & Cosmos-based (100+ blockchains). Features include staking, NFT support, and DApp integration. | Bitcoin, Ethereum, Cosmos, TRON | [@owallet_dev](https://x.com/owallet_dev) | `Growth` | Tu Chu |
-| [Sightsea](https://www.sightsea.tech/) | Sightsea is an AI-powered decentralized social platform that leverages DePIN technology to ensure the highest level of user information security. By empowering communities and experts, Sightsea builds trust, drives engagement, and unlocks value within a truly decentralized and intelligent ecosystem. | Ethereum | [@Sightsea_Tech](https://x.com/Sightsea_Tech) | `Growth` | [John Trinh](https://x.com/JohnTrinhKretos) |
+| [OWallet](https://owallet.dev/) | OWallet focuses on universal digital assets management on most liquid blockchains including Bitcoin, Ethereum-based & Cosmos-based (100+ blockchains). Features include staking, NFT support, and DApp integration. | Bitcoin, Ethereum, Cosmos, TRON | [@owallet_dev](https://x.com/owallet_dev) | `Growth` |[Tu Chu](https://x.com/tucq88) |
+| [Sightsea](https://www.sightsea.tech/) | Sightsea is an AI-powered decentralized social platform that leverages DePIN technology to ensure the highest level of user information security. By empowering communities and experts, Sightsea builds trust, drives engagement, and unlocks value within a truly decentralized and intelligent ecosystem. | Ethereum | [@Sightsea_Tech](https://x.com/Sightsea_Tech) | `Early` | [John Trinh](https://x.com/JohnTrinhKretos) |
 | [Punkga.me](https://punkga.me/) | Punkga.me is a Web3 social platform that enables gamers to build their gaming identity, connect with other players, and earn rewards through gameplay achievements. | Story | [@punkgame_](https://x.com/punkgame_) | `Beta` | [Long Nguyen](https://x.com/EledraNguyen) |
 | [Berally](https://berally.xyz/) | Berally is a decentralized social platform that helps users discover and connect with like-minded individuals in the Web3 space through shared interests and activities. | Berachain | [@berally_xyz](https://x.com/berally_xyz) | `Beta` | [Cuong Do](https://x.com/cuongdo_cl) |
 
@@ -72,21 +72,17 @@ Your Ultimate Guide to the Vibrant Web3 Ecosystem in Vietnam! 🌟
 
 | Name | Description | Eco | X | Status | Founders |
 |------|-------------|-----|---|--------|----------|
-| [Nimbus](https://app.getnimbus.io/) | Portfolio tracker for Non-Ethereum chains. Get your in-deep wallet analysis, optimize your earning | Ethereum, Solana, TON, SUI | [@Nimbus](https://x.com/get_nimbus) | `Growth` | [Thanh Le](https://x.com/0xthanhle) <br/> [Toan Nhu](https://x.com/toannhu21096) |
-| [Coin68](https://coin68.com/) | Vietnam's largest crypto media and data platform, providing comprehensive market data, news, and analysis in Vietnamese. The platform covers both global and local crypto ecosystems. | Multichain | [@coin68official](https://x.com/coin68official) | `Growth` | [Thuat "Zane" Nguyen](https://x.com/Zane_Kyros) <br /> [Jenny Nguyen](https://x.com/jennynguyen68_) |
+| [Nimbus](https://app.getnimbus.io/) | Portfolio tracker for Non-Ethereum chains. Get your in-deep wallet analysis, optimize your earning | Ethereum, Solana, TON, SUI | [@Nimbus](https://x.com/get_nimbus) | `Early` | [Thanh Le](https://x.com/0xthanhle) <br/> [Toan Nhu](https://x.com/toannhu21096) |
+| [Coin68](https://coin68.com/) | Vietnam's largest crypto media and data platform, providing comprehensive market data, news, and analysis in Vietnamese. The platform covers both global and local crypto ecosystems. | Multichain | [@coin68official](https://x.com/coin68official) | `Growth` | [Thuat "Zane" Nguyen](https://x.com/Zane_Kyros) <br/> [Jenny Nguyen](https://x.com/jennynguyen68_) |
 | [Formo](https://formo.so/) | Formo is a forms and product analytics tool designed for onchain builders. Spend less time building analytics, and more time building products. | Ethereum | [@getFormo](https://x.com/getformo) | `Early` | [Yos Riady](https://x.com/yosriady) |
 
-### Others
-
-#### AI x Crypto
+### AI x Crypto
 
 | Name | Description | Eco | X | Status | Founder |
 |------|-------------|-----|---|--------|---------|
 | [Inferium](https://www.inferium.io/) | Inferium is a ML-driven intelligent store and aggregator for AI inference. It empowers developers to seamlessly verify, deploy, and list their AI models. The platform is currently in private beta. | Ethereum | [@InferiumAI](https://x.com/InferiumAI) | `Beta` | Tristan Lee |
-| [sqrFUND](https://sqrfund.io/) | sqrFUND is an AI-powered investment platform that helps users discover, analyze, and invest in Web3 projects. The platform leverages AI to provide comprehensive project analysis and risk assessment. | Solana | [@sqrDAO](https://x.com/sqrDAO) | `Beta` | [Long "Leo" Pham](https://x.com/0x_castelian) |
+| [sqrFUND](https://sqrfund.io/) | sqrFUND is an AI-powered investment platform that helps users discover, analyze, and invest in Web3 projects. The platform leverages AI to provide comprehensive project analysis and risk assessment. | Solana | [@sqrDAO](https://x.com/sqrDAO) | `Beta` | [Long "Leo" Pham](https://x.com/sqrdao_intern) <br/> [Long Nguyen](https://x.com/EledraNguyen)  |
 | [Enso DeFAI](https://edas.ensofi.xyz/) | Enso DeFAI is an AI-powered DeFi platform that enables users to discover and engage with yield strategies through its EDAS (Enso Decentralized AI System) protocol. The platform features leaderboard tracking and multi-chain support. | Solana, Eclipse | [@ensodefai](https://x.com/ensodefai) | `Beta` | [Dree Do](https://x.com/dreedohaha) |
-
-#### Onramps
 
 ## Builder Resources
 
@@ -102,7 +98,7 @@ Your Ultimate Guide to the Vibrant Web3 Ecosystem in Vietnam! 🌟
 
 | Name | Description | Eco | X | Status | Founders |
 |------|-------------|-----|---|--------|----------|
-| [sqrDAO](https://sqrdao.com/) | ​​​​​​SqrDAO is a Web3 Builders-driven community created by and for crypto builders. We aim to connect and empower technical and non-technical builders alike to collaborate and explore new ideas. | Ethereum, Solana | [@sqrDAO](https://x.com/sqrDAO) | `Active` | [Long "Leo" Pham](https://x.com/0x_castelian) <br/> [Danny Doan](https://x.com/TuongDoan9) <br/> [Vuong Le](https://x.com/hanjaycrypto) |
+| [sqrDAO](https://sqrdao.com/) | ​​​​​​SqrDAO is a Web3 Builders-driven community created by and for crypto builders. We aim to connect and empower technical and non-technical builders alike to collaborate and explore new ideas. | Ethereum, Solana | [@sqrDAO](https://x.com/sqrDAO) | `Active` | [Long "Leo" Pham](https://x.com/sqrdao_intern) <br/> [Danny Doan](https://x.com/TuongDoan9) <br/> [Vuong Le](https://x.com/hanjaycrypto) |
 | [Superteam Vietnam](https://vn.superteam.fun/) | ​​​​​Superteam Vietnam is a community of founders, builders and creative artists in Vietnam. Our goal is to raise the quality of Vietnamese builders, specifically on Solana blockchain. | Solana | [@SuperteamVN](https://x.com/SuperteamVN) | `Active` | [Anh Tran](https://x.com/SaigonButcher) |
 | [SUCI Blockchain](https://suci.io/) | SUCI Blockchain is a community-driven organization focused on blockchain education and research in Vietnam, fostering knowledge sharing and collaboration among students and professionals. | Multichain | [@SUCI_Blockchain](https://x.com/SUCI_Blockchain) | `Active` | [Quinn Giang](https://www.linkedin.com/in/giangdiemquynh/) |
 | [APAC DAO](https://apacdao.org/) | APAC DAO is a decentralized community of Web3 builders and enthusiasts across the Asia Pacific region, focusing on fostering collaboration and growth in the regional Web3 ecosystem. | Multichain | [@APAC_DAO](https://x.com/APAC_DAO) | `Active` | [Nicole Nguyen](https://www.linkedin.com/in/nicole-nguyen-vietnam/) |
