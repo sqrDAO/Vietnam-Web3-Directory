@@ -103,8 +103,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 itemDiv.innerHTML = `
                     <div class="card">
-                        <h3>${project.name}</h3>
-                        <p><strong>Description:</strong> ${project.description}</p>
+                        <h3 class="card-title">${project.name}</h3>
+                        <p class="card-description">${project.description}</p>
                         <p>${xFieldContent} ${websiteField}</p>
                         ${ecoFieldContent}
                         <p><strong>Status:</strong> ${formattedStatus}</p>
