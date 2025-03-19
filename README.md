@@ -37,7 +37,7 @@ Your Ultimate Guide to the Vibrant Web3 Ecosystem in Vietnam! 🌟
 | [WeBera](https://webera.xyz/) | WeBera is a decentralized perpetual exchange built on Base, offering leveraged trading with deep liquidity and low fees. The platform features an innovative risk management system and user-friendly interface. | Berachain | [@WeBera_xyz](https://x.com/WeBera_xyz) | `Beta` |  |
 | [iLoop Finance](https://iloop.finance/) | iLoop Finance is a DeFi protocol that enables users to earn sustainable yields through innovative strategies and risk management solutions. The platform focuses on capital efficiency and long-term value creation. | Solana | [@iLoopFinance](https://x.com/iLoopFinance) | `Beta` |  |
 | [Mosaic](https://mosaic.ag/) | Mosaic is a DeFi protocol that provides structured products and yield strategies across multiple chains. The platform offers innovative vaults with auto-compounding features and optimized yield generation. | Movement | [@mosaic_ag](https://x.com/mosaic_ag) | `Beta` |  |
-| [MEVX.io](https://mevx.io/) | MEVX.io is a decentralized finance platform that offers innovative yield farming and liquidity provision solutions, enabling users to maximize their returns on investments. | Ethereum, Solana | [@MEVX_io](https://x.com/MEVX_io) | `Beta` |  |
+| [Amnis Finance](https://amnis.finance/) | Amnis Finance is a decentralized finance platform that focuses on providing innovative yield farming and liquidity solutions, enabling users to maximize their returns. | Aptos | [@AmnisFinance](https://x.com/AmnisFinance) | `Beta` | [Eric Hung Nguyen](https://x.com/eric_amnis) |
 
 ### Gaming
 
