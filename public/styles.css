@@ -59,7 +59,6 @@ footer {
 .card-container {
     display: flex; /* Use flexbox for layout */
     flex-wrap: wrap; /* Allow cards to wrap to the next line if necessary */
-    justify-content: space-between; /* Space between cards */
     margin: 20px 0; /* Margin above and below the card container */
 }
 
