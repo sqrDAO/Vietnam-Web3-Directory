@@ -13,6 +13,8 @@ body {
     background-color: rgba(244, 244, 244, 0.8); /* Light background with reduced brightness */
     color: var(--subtext-color); /* Change body text color to a darker gray */
     line-height: 1.6; /* Improve readability */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
 }
 
 h1, h2, h3 {
@@ -27,7 +29,7 @@ h1 {
 }
 
 h2 {
-    color: var(--accent-color); /* Change category headers to accent color */
+    color: var(--primary-color); /* Change category headers to accent color */
     margin-top: 20px; /* Space above category headers */
     margin-bottom: 10px; /* Space below category headers */
     font-size: 2em; /* Category heading size */
@@ -40,45 +42,18 @@ h3 {
 }
 
 main {
-    padding: 20px;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-th, td {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 12px;
-}
-
-th {
-    background-color: #c8102e; /* Red color for table headers */
-    color: #ffcc00; /* Yellow text for table headers */
-}
-
-td {
-    background-color: #ffffff; /* White background for table cells */
-}
-
-td a {
-    color: #c8102e; /* Red color for links */
-    text-decoration: none;
-}
-
-td a:hover {
-    text-decoration: underline; /* Underline on hover for links */
+    flex: 1; /* Allow main to grow and take available space */
+    padding: 20px; /* Add padding for main content */
 }
 
 footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #c8102e; /* Red color for footer */
-    color: #ffcc00; /* Yellow text for footer */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #000; /* Background color for visibility */
+    color: white; /* Text color */
+    text-align: center; /* Center text */
 }
 
 .card-container {
@@ -238,6 +213,10 @@ p {
     color: var(--text-color); /* Set paragraph text color to white */
 }
 
+.header a {
+    z-index: 2;
+}
+
 .header .built-by {
     display: flex;
     align-items: center; /* Center items vertically */
@@ -284,5 +263,9 @@ p {
     margin-top: 10px; /* Space between text and image */
     opacity: 1; /* Ensure opacity is set to 1 */
     filter: none; /* Remove any filters that might grey it out */
-    z-index: 2;
+}
+
+html, body {
+    height: 100%; /* Ensure the body takes the full height */
+    margin: 0; /* Remove default margin */
 }
