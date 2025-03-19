@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(data => {
             console.log("README.md loaded successfully.");
             Object.assign(allData, parseAllData(data)); // Store parsed data
-            console.log("Parsed Data:", allData);
             populateItems(allData); // Populate items initially
         })
         .catch(error => console.error('Error loading README.md:', error));
@@ -105,11 +104,6 @@ document.addEventListener("DOMContentLoaded", function() {
             console.log(`Parsing category: ${categoryName}`);
             console.log(`Section content: ${sectionContent}`);
 
-            // Log the Events section content specifically
-            if (categoryName === "Events") {
-                console.log("Events section:", sectionContent);
-            }
-
             // Check if sectionContent is not empty before parsing
             if (sectionContent) {
                 categories[categoryName] = parseCategoryData(sectionContent, categoryName);
@@ -118,15 +112,12 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
 
-        console.log("Final parsed categories:", categories);
         return categories;
     }
 
     function parseCategoryData(section, categoryName) {
         const categoryData = [];
         const lines = section.split('\n').filter(line => line.trim() !== '');
-
-        console.log(`Lines in section: ${lines.length}`);
 
         for (let i = 1; i < lines.length; i++) { // Start from 1 to skip the header
             const line = lines[i].trim();
@@ -194,13 +185,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     people: formattedPeople // Store formatted people
                 };
 
-                // Log the project data if the category is Events
-                if (categoryName === "Events") {
-                    console.log("Parsed Events data:", projectData);
-                }
-
                 categoryData.push(projectData);
-                console.log("Added project data:", projectData);
             } else {
                 console.warn("Skipping line due to insufficient columns:", line);
             }
