@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "build": "echo 'Building static site...'",
-    "start": "http-server -c-1"
+    "start": "http-server -c-1 public"
   },
   "dependencies": {
     "http-server": "^0.12.3"

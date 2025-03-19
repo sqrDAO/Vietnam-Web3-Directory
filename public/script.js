@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     showLoading();
 
-    fetch('../README.md')
+    fetch('https://raw.githubusercontent.com/sqrDAO/Vietnam-Web3-Directory/refs/heads/main/README.md')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok: ' + response.statusText);
