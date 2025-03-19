@@ -34,6 +34,22 @@ document.addEventListener("DOMContentLoaded", function() {
         filterItems(categoryFilter.value, searchTerm);
     });
 
+    function getEcoIcon(ecos) {
+        if (!ecos) {
+            return { icons: '', count: 0 }; // Return empty if ecos is null or undefined
+        }
+
+        const ecoArray = ecos.split(',').map(eco => eco.trim()); // Split by comma and trim whitespace
+        const ecoIcons = ecoArray.map(eco => {
+            const imagePath = `img/${eco.toLowerCase()}.svg`; // Construct image path based on ecosystem name
+            return `<img src="${imagePath}" alt="${eco}" class="eco-icon" style="width: 20px; height: 20px; vertical-align: middle;">`; // Set size and align
+        }).filter(icon => icon !== ''); // Filter out any empty icons
+
+        const uniqueEcos = [...new Set(ecoArray)]; // Get unique ecosystems
+        const count = uniqueEcos.length; // Count unique ecosystems
+        return { icons: ecoIcons.join(' '), count }; // Return icons and count
+    }
+
     function filterItems(selectedCategory, searchTerm) {
         itemContainer.innerHTML = ''; // Clear existing items
 
@@ -65,28 +81,32 @@ document.addEventListener("DOMContentLoaded", function() {
                 const itemDiv = document.createElement("div");
                 itemDiv.classList.add("item");
 
-                // Format the "X" field as a hyperlink
+                // Format the "X" field as a hyperlink with the new Twitter "X" icon
                 const xFieldMatch = project.x.match(/\[(.+?)\]\((.+?)\)/); // Match [Name](URL)
                 let xFieldContent = project.x; // Default to original if no match
 
                 if (xFieldMatch) {
                     const linkText = xFieldMatch[1]; // Text inside []
                     const linkUrl = xFieldMatch[2]; // URL inside ()
-                    xFieldContent = `<a href="${linkUrl}" target="_blank">${linkText}</a>`; // Create hyperlink
+                    xFieldContent = `<a href="${linkUrl}" target="_blank"><i class="fab fa-x-twitter"></i> ${linkText}</a>`; // Create hyperlink with new Twitter "X" icon
                 }
 
                 // Format the Status field to be italic
                 const formattedStatus = `<em>${project.status}</em>`; // Wrap status in <em> tags
 
-                // Conditionally render the Eco field
-                const ecoFieldContent = project.eco ? `<p><strong>Eco:</strong> ${project.eco}</p>` : '';
+                // Conditionally render the Eco field with the appropriate icons
+                const { icons: ecoIcons } = getEcoIcon(project.eco);
+                const ecoFieldContent = project.eco ? `<p><strong>Eco:</strong> ${ecoIcons}</p>` : '';
+
+                // Add the website field with an icon
+                const websiteField = project.website ? `<strong><a href="${project.website}" target="_blank"><i class="fas fa-link"></i></a>` : '';
 
                 itemDiv.innerHTML = `
                     <div class="card">
                         <h3>${project.name}</h3>
                         <p><strong>Description:</strong> ${project.description}</p>
+                        <p>${xFieldContent} ${websiteField}</p>
                         ${ecoFieldContent}
-                        <p><strong>X:</strong> ${xFieldContent}</p>
                         <p><strong>Status:</strong> ${formattedStatus}</p>
                         <p><strong>People:</strong> ${project.people}</p>
                     </div>
@@ -95,9 +115,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 itemContainer.appendChild(itemDiv);
             });
         }
-
-        // Append the card container to the item container
-        itemContainer.appendChild(cardContainer);
     }
 
     function parseAllData(data) {
@@ -240,34 +257,38 @@ document.addEventListener("DOMContentLoaded", function() {
                 const itemDiv = document.createElement("div");
                 itemDiv.classList.add("card"); // Add the card class for styling
 
-                // Format the "X" field as a hyperlink
+                // Format the "X" field as a hyperlink with the new Twitter "X" icon
                 const xFieldMatch = project.x.match(/\[(.+?)\]\((.+?)\)/); // Match [Name](URL)
                 let xFieldContent = project.x; // Default to original if no match
 
                 if (xFieldMatch) {
                     const linkText = xFieldMatch[1]; // Text inside []
                     const linkUrl = xFieldMatch[2]; // URL inside ()
-                    xFieldContent = `<a href="${linkUrl}" target="_blank">${linkText}</a>`; // Create hyperlink
+                    xFieldContent = `<a href="${linkUrl}" target="_blank"><i class="fab fa-x-twitter"></i></a>`; // Create hyperlink with new Twitter "X" icon
                 }
 
                 // Format the Status field to be italic
                 const formattedStatus = `<em>${project.status}</em>`; // Wrap status in <em> tags
 
                 // Conditionally render the Eco field
-                const ecoFieldContent = project.eco ? `<p><strong>Eco:</strong> ${project.eco}</p>` : '';
+                const { icons: ecoIcons } = getEcoIcon(project.eco);
+                const ecoFieldContent = project.eco ? `<strong>Eco:</strong> ${ecoIcons}` : '';
+
+                // Add the website field with an icon
+                const websiteField = project.website ? `<a href="${project.website}" target="_blank"><i class="fas fa-link"></i></a>` : '';
 
                 // Add the category tag
-            const categoryTag = `<p><strong>Category:</strong> ${category}</p>`; // Assuming project.category exists
+                const categoryTag = `<strong>Category:</strong> ${category}`; // Assuming project.category exists
 
-            itemDiv.innerHTML = `
-                <h3>${project.name}</h3>
-                ${categoryTag} <!-- Add the category tag here -->
-                <p>${project.description}</p>
-                ${ecoFieldContent}
-                <p><strong>X:</strong> ${xFieldContent}</p>
-                <p><strong>Status:</strong> ${formattedStatus}</p>
-                <p><strong>People:</strong> ${project.people}</p>
-            `;
+                itemDiv.innerHTML = `
+                    <h3>${project.name}</h3>
+                    <p>${categoryTag}</p>
+                    <p>${xFieldContent} ${websiteField}</p>
+                    <p>${project.description}</p>
+                    ${ecoFieldContent}
+                    <p><strong>Status:</strong> ${formattedStatus}</p>
+                    <p><strong>People:</strong> ${project.people}</p>
+                `;
 
                 // Append the card to the card container
                 cardContainer.appendChild(itemDiv);

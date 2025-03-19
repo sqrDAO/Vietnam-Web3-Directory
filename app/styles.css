@@ -15,8 +15,6 @@ body {
 }
 
 header {
-    background: #c8102e; /* Red color of the Vietnam flag */
-    color: #ffcc00; /* Yellow color of the Vietnam flag */
     padding: 20px 0;
     text-align: center;
 }
@@ -149,7 +147,8 @@ p {
 .loading {
     text-align: center;
     font-size: 18px;
-    color: #c8102e; /* Red color for loading text */
+    color: white; /* Change to white for better visibility */
+    /* Alternatively, use color: transparent; for transparency */
 }
 
 :focus {
@@ -169,12 +168,14 @@ p {
 
     .card {
         flex: 1 1 calc(50% - 20px); /* Adjust to 50% width on smaller screens */
+        max-width: calc(50% - 20px); /* Set a maximum width for the card */
     }
 }
 
 @media (max-width: 480px) {
     .card {
         flex: 1 1 100%; /* Full width on very small screens */
+        max-width: 100%; /* Ensure maximum width is 100% */
     }
 }
 
@@ -191,4 +192,64 @@ p {
 
 .button:hover {
     background-color: var(--accent-color); /* Change color on hover */
+}
+
+.header {
+    position: relative; /* Position relative for the overlay */
+    background-image: url('img/tron-le-wUk2U5Wirxg-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px 20px;
+    height: 300px; /* Ensure the height is sufficient */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center;
+    color: #ffffff; /* Set header text color to white for better contrast */
+    filter: brightness(0.7); /* Darken the background image */
+}
+
+.header::before {
+    content: ""; /* Create an empty pseudo-element */
+    position: absolute; /* Position it absolutely */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: 1; /* Place it behind the text */
+}
+
+.header h1, .header p, .header .built-by {
+    position: relative; /* Position relative to stack above the overlay */
+    z-index: 2; /* Ensure text is above the overlay */
+}
+
+.header h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 4em; /* Increased size for the main heading */
+    color: #ffcc00; /* Yellow for better visibility against the background */
+}
+
+.header p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5em; /* Increased size for the paragraph */
+    margin: 10px 0;
+    color: #ffffff; /* Set paragraph text color to white */
+}
+
+.header img {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 10px; /* Space between text and image */
+}
+
+.header .built-by {
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+.header .built-by p {
+    margin: 0; /* Remove default margin */
 }
