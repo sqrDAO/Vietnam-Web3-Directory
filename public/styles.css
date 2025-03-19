@@ -248,7 +248,7 @@ p {
 .card-title {
     font-size: 18px; /* Title font size */
     font-weight: bold; /* Bold title */
-    color: var(--text-color); /* Change card title color */
+    color: var(--primary-color); /* Change card title color */
 }
 
 /* Styling for card descriptions */

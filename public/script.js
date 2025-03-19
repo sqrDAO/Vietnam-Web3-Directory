@@ -52,6 +52,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function filterItems(selectedCategory, searchTerm) {
         itemContainer.innerHTML = ''; // Clear existing items
+        itemContainer.classList.add("card-container");
+
+        // Check if we need to reload all data
+        if (selectedCategory === "all" && searchTerm === "") {
+            populateItems(allData); // Reload all data
+            return; // Exit the function early
+        }
 
         // Create a temporary object to hold grouped items
         const groupedItems = {};
@@ -75,11 +82,11 @@ document.addEventListener("DOMContentLoaded", function() {
         for (const category in groupedItems) {
             const categoryHeader = document.createElement("h2");
             categoryHeader.textContent = category; // Use the category name as the header
-            itemContainer.appendChild(categoryHeader);
+            // itemContainer.appendChild(categoryHeader);
 
             groupedItems[category].forEach(project => {
                 const itemDiv = document.createElement("div");
-                itemDiv.classList.add("item");
+                itemDiv.classList.add("card");
 
                 // Format the "X" field as a hyperlink with the new Twitter "X" icon
                 const xFieldMatch = project.x.match(/\[(.+?)\]\((.+?)\)/); // Match [Name](URL)
@@ -88,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 if (xFieldMatch) {
                     const linkText = xFieldMatch[1]; // Text inside []
                     const linkUrl = xFieldMatch[2]; // URL inside ()
-                    xFieldContent = `<a href="${linkUrl}" target="_blank"><i class="fab fa-x-twitter"></i> ${linkText}</a>`; // Create hyperlink with new Twitter "X" icon
+                    xFieldContent = `<a href="${linkUrl}" target="_blank"><i class="fab fa-x-twitter"></i></a>`; // Create hyperlink with new Twitter "X" icon
                 }
 
                 // Format the Status field to be italic
@@ -99,17 +106,16 @@ document.addEventListener("DOMContentLoaded", function() {
                 const ecoFieldContent = project.eco ? `<p><strong>Eco:</strong> ${ecoIcons}</p>` : '';
 
                 // Add the website field with an icon
-                const websiteField = project.website ? `<strong><a href="${project.website}" target="_blank"><i class="fas fa-link"></i></a>` : '';
+                const websiteField = project.website ? `<a href="${project.website}" target="_blank"><i class="fas fa-link"></i></a>` : '';
 
                 itemDiv.innerHTML = `
-                    <div class="card">
                         <h3 class="card-title">${project.name}</h3>
-                        <p class="card-description">${project.description}</p>
+                        <p><strong>Category:</strong> ${category}</p>
                         <p>${xFieldContent} ${websiteField}</p>
+                        <p class="card-description">${project.description}</p>
                         ${ecoFieldContent}
                         <p><strong>Status:</strong> ${formattedStatus}</p>
                         <p><strong>People:</strong> ${project.people}</p>
-                    </div>
                 `;
                 console.log("Item Div:", itemDiv.innerHTML);
                 itemContainer.appendChild(itemDiv);
@@ -190,6 +196,11 @@ document.addEventListener("DOMContentLoaded", function() {
                         console.warn("Insufficient columns for other categories:", line);
                         continue; // Skip this entry if not enough columns
                     }
+                }
+
+                // Check if peopleField is empty and assign "N/A" if it is
+                if (!peopleField || peopleField.trim() === ' ') {
+                    peopleField = 'N/A';
                 }
 
                 // Format the people field
@@ -281,7 +292,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 const categoryTag = `<strong>Category:</strong> ${category}`; // Assuming project.category exists
 
                 itemDiv.innerHTML = `
-                    <h3>${project.name}</h3>
+                    <h3 class="card-title">${project.name}</h3>
                     <p>${categoryTag}</p>
                     <p>${xFieldContent} ${websiteField}</p>
                     <p>${project.description}</p>
