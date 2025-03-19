@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const categoryFilter = document.getElementById("category-filter");
     const searchInput = document.getElementById("search-input");
 
+    showLoading();
+
     fetch('../README.md')
         .then(response => {
             if (!response.ok) {
@@ -15,8 +17,12 @@ document.addEventListener("DOMContentLoaded", function() {
             console.log("README.md loaded successfully.");
             Object.assign(allData, parseAllData(data)); // Store parsed data
             populateItems(allData); // Populate items initially
+            hideLoading();
         })
-        .catch(error => console.error('Error loading README.md:', error));
+        .catch(error => {
+            console.error('Error loading README.md:', error);
+            hideLoading();
+        });
 
     categoryFilter.addEventListener('change', function() {
         const selectedCategory = this.value;
@@ -76,16 +82,22 @@ document.addEventListener("DOMContentLoaded", function() {
                 const ecoFieldContent = project.eco ? `<p><strong>Eco:</strong> ${project.eco}</p>` : '';
 
                 itemDiv.innerHTML = `
-                    <h3>${project.name}</h3>
-                    <p><strong>Description:</strong> ${project.description}</p>
-                    ${ecoFieldContent}
-                    <p><strong>X:</strong> ${xFieldContent}</p>
-                    <p><strong>Status:</strong> ${formattedStatus}</p>
-                    <p><strong>People:</strong> ${project.people}</p>
+                    <div class="card">
+                        <h3>${project.name}</h3>
+                        <p><strong>Description:</strong> ${project.description}</p>
+                        ${ecoFieldContent}
+                        <p><strong>X:</strong> ${xFieldContent}</p>
+                        <p><strong>Status:</strong> ${formattedStatus}</p>
+                        <p><strong>People:</strong> ${project.people}</p>
+                    </div>
                 `;
+                console.log("Item Div:", itemDiv.innerHTML);
                 itemContainer.appendChild(itemDiv);
             });
         }
+
+        // Append the card container to the item container
+        itemContainer.appendChild(cardContainer);
     }
 
     function parseAllData(data) {
@@ -128,7 +140,6 @@ document.addEventListener("DOMContentLoaded", function() {
             }
 
             const columns = line.split('|').map(col => col.trim()).filter(col => col);
-            console.log(`Parsed columns from line ${i}:`, columns);
 
             if (columns.length >= 5) { // Ensure there are enough columns
                 // Parse the name and website from the first column
@@ -190,7 +201,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 console.warn("Skipping line due to insufficient columns:", line);
             }
         }
-        console.log(`Parsed category data:`, categoryData);
         return categoryData;
     }
 
@@ -222,9 +232,13 @@ document.addEventListener("DOMContentLoaded", function() {
             categoryHeader.textContent = category; // Use the category name as the header
             itemContainer.appendChild(categoryHeader);
 
+            // Create a card container for the current category
+            const cardContainer = document.createElement('div');
+            cardContainer.classList.add('card-container'); // Add the card-container class
+
             allData[category].forEach(project => {
                 const itemDiv = document.createElement("div");
-                itemDiv.classList.add("item");
+                itemDiv.classList.add("card"); // Add the card class for styling
 
                 // Format the "X" field as a hyperlink
                 const xFieldMatch = project.x.match(/\[(.+?)\]\((.+?)\)/); // Match [Name](URL)
@@ -242,16 +256,33 @@ document.addEventListener("DOMContentLoaded", function() {
                 // Conditionally render the Eco field
                 const ecoFieldContent = project.eco ? `<p><strong>Eco:</strong> ${project.eco}</p>` : '';
 
-                itemDiv.innerHTML = `
-                    <h3>${project.name}</h3>
-                    <p><strong>Description:</strong> ${project.description}</p>
-                    ${ecoFieldContent}
-                    <p><strong>X:</strong> ${xFieldContent}</p>
-                    <p><strong>Status:</strong> ${formattedStatus}</p>
-                    <p><strong>People:</strong> ${project.people}</p>
-                `;
-                itemContainer.appendChild(itemDiv);
+                // Add the category tag
+            const categoryTag = `<p><strong>Category:</strong> ${category}</p>`; // Assuming project.category exists
+
+            itemDiv.innerHTML = `
+                <h3>${project.name}</h3>
+                ${categoryTag} <!-- Add the category tag here -->
+                <p>${project.description}</p>
+                ${ecoFieldContent}
+                <p><strong>X:</strong> ${xFieldContent}</p>
+                <p><strong>Status:</strong> ${formattedStatus}</p>
+                <p><strong>People:</strong> ${project.people}</p>
+            `;
+
+                // Append the card to the card container
+                cardContainer.appendChild(itemDiv);
             });
+
+            // Append the card container to the item container
+            itemContainer.appendChild(cardContainer);
         }
+    }
+
+    function showLoading() {
+        document.getElementById('loading').style.display = 'block';
+    }
+
+    function hideLoading() {
+        document.getElementById('loading').style.display = 'none';
     }
 });

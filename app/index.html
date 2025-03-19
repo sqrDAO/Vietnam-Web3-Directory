@@ -11,14 +11,17 @@
         <h1>Vietnam Web3 Directory</h1>
     </header>
     <main>
-        <input type="text" id="search-input" placeholder="Search by item name..." />
-        <select id="category-filter">
-            <!-- Add more categories as needed -->
-        </select>
+        <div class="filter-container">
+            <input type="text" id="search-input" placeholder="Search by item name..." />
+            <select id="category-filter">
+                <!-- Options will be populated dynamically -->
+            </select>
+        </div>
         <section id="tables-container">
             <!-- Items will be populated here -->
         </section>
     </main>
+    <div id="loading" class="loading" style="display: none;">Loading...</div>
     <script src="script.js"></script>
 </body>
 </html>
