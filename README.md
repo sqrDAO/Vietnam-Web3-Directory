@@ -76,17 +76,13 @@ Your Ultimate Guide to the Vibrant Web3 Ecosystem in Vietnam! 🌟
 | [Coin68](https://coin68.com/) | Vietnam's largest crypto media and data platform, providing comprehensive market data, news, and analysis in Vietnamese. The platform covers both global and local crypto ecosystems. | Multichain | [@coin68official](https://x.com/coin68official) | `Growth` | [Thuat "Zane" Nguyen](https://x.com/Zane_Kyros) <br /> [Jenny Nguyen](https://x.com/jennynguyen68_) |
 | [Formo](https://formo.so/) | Formo is a forms and product analytics tool designed for onchain builders. Spend less time building analytics, and more time building products. | Ethereum | [@getFormo](https://x.com/getformo) | `Early` | [Yos Riady](https://x.com/yosriady) |
 
-### Others
-
-#### AI x Crypto
+### AI x Crypto
 
 | Name | Description | Eco | X | Status | Founder |
 |------|-------------|-----|---|--------|---------|
 | [Inferium](https://www.inferium.io/) | Inferium is a ML-driven intelligent store and aggregator for AI inference. It empowers developers to seamlessly verify, deploy, and list their AI models. The platform is currently in private beta. | Ethereum | [@InferiumAI](https://x.com/InferiumAI) | `Beta` | Tristan Lee |
 | [sqrFUND](https://sqrfund.io/) | sqrFUND is an AI-powered investment platform that helps users discover, analyze, and invest in Web3 projects. The platform leverages AI to provide comprehensive project analysis and risk assessment. | Solana | [@sqrDAO](https://x.com/sqrDAO) | `Beta` | [Long "Leo" Pham](https://x.com/0x_castelian) |
 | [Enso DeFAI](https://edas.ensofi.xyz/) | Enso DeFAI is an AI-powered DeFi platform that enables users to discover and engage with yield strategies through its EDAS (Enso Decentralized AI System) protocol. The platform features leaderboard tracking and multi-chain support. | Solana, Eclipse | [@ensodefai](https://x.com/ensodefai) | `Beta` | [Dree Do](https://x.com/dreedohaha) |
-
-#### Onramps
 
 ## Builder Resources
 
