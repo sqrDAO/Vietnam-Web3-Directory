@@ -1,0 +1,27 @@
+# Ignore macOS .DS_Store files
+.DS_Store
+
+# Ignore standard files
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*.class
+*.jar
+*.war
+*.zip
+*.tar
+*.gz
+*.tgz
+*.egg
+*.egg-info/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+node_modules/
+dist/
+build/
+*.env
+*.local 
