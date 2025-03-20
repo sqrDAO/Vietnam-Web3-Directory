@@ -118,7 +118,7 @@ To be updated...
 
 ## Contributions
 
-This is a community-curated list of Vietnam Web3-related projects, initiated and maintained by sqrDAO and Aura Network. If you have a project that you would like to add, please match or improve upon the format of the existing entries.
+This is a community-curated list of Vietnam Web3-related projects, initiated and maintained by sqrDAO. If you have a project that you would like to add, please match or improve upon the format of the existing entries.
 
 For starter, please follow the directory [guide](guide.md).
 
