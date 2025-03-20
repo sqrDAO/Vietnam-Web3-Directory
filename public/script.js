@@ -165,9 +165,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
             if (columns.length >= 5) { // Ensure there are enough columns
                 // Parse the name and website from the first column
-                if (categoryName === "AI x Crypto") {
-                    console.log("Columns:", columns);
-                }
                 const nameWithLink = columns[0];
                 const nameMatch = nameWithLink.match(/\[(.+?)\]\((.+?)\)/); // Match [Name](URL)
 
@@ -189,13 +186,6 @@ document.addEventListener("DOMContentLoaded", function() {
                         peopleField = columns[4]; // Assuming the Organizers column is the 5th column (index 4)
                     } else {
                         console.warn("Insufficient columns for Events category:", line);
-                        continue; // Skip this entry if not enough columns
-                    }
-                } else if (categoryName === "AI x Crypto") {
-                    if (columns.length >= 5) {
-                        peopleField = "N/A"; // Assuming the Organizers column is the 5th column (index 4)
-                    } else {
-                        console.warn("Insufficient columns for other categories:", line);
                         continue; // Skip this entry if not enough columns
                     }
                 } else {
