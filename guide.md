@@ -1,4 +1,4 @@
-# Contributing to Awesome Vietnam Web3
+# Contributing to Vietnam Web3 Directory
 
 We welcome contributions from the community to help make this directory the best resource for discovering Vietnam's vibrant Web3 ecosystem!
 
@@ -6,7 +6,7 @@ We welcome contributions from the community to help make this directory the best
 
 1. **Find or Discover a Project:**
 
-   - Identify a Vietnamese Web3 project that you think should be included.
+   - Identify a Vietnam-related Web3 project that you think should be included.
    - Make sure it's not already listed in the directory.
 
 2. **Fork the Repository:**
