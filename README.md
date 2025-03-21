@@ -102,6 +102,7 @@ Your Ultimate Guide to the Vibrant Web3 Ecosystem in Vietnam! 🌟
 | [Superteam Vietnam](https://vn.superteam.fun/) | ​​​​​Superteam Vietnam is a community of founders, builders and creative artists in Vietnam. Our goal is to raise the quality of Vietnamese builders, specifically on Solana blockchain. | Solana | [@SuperteamVN](https://x.com/SuperteamVN) | `Active` | [Anh Tran](https://x.com/SaigonButcher) |
 | [SUCI Blockchain](https://suci.io/) | SUCI Blockchain is a community-driven organization focused on blockchain education and research in Vietnam, fostering knowledge sharing and collaboration among students and professionals. | Multichain | [@SUCI_Blockchain](https://x.com/SUCI_Blockchain) | `Active` | [Quinn Giang](https://www.linkedin.com/in/giangdiemquynh/) |
 | [APAC DAO](https://apacdao.org/) | APAC DAO is a decentralized community of Web3 builders and enthusiasts across the Asia Pacific region, focusing on fostering collaboration and growth in the regional Web3 ecosystem. | Multichain | [@APAC_DAO](https://x.com/APAC_DAO) | `Active` | [Nicole Nguyen](https://www.linkedin.com/in/nicole-nguyen-vietnam/) |
+| [OpenGuild](https://openguild.wtf/) | OpenGuild is a community of Web 3.0 builders who contribute to open-source projects, learn, and connect enthusiasts together with a focus on expanding the Polkadot ecosystem. | Polkadot | [@openguildwtf](https://x.com/openguildwtf) |  `Active` | [Cris Nguyen](https://x.com/crisnguyen99) <br/> [Tin Chung](https://x.com/chungquantin) |
 
 ### Events
 
