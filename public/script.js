@@ -41,8 +41,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
         const ecoArray = ecos.split(',').map(eco => eco.trim()); // Split by comma and trim whitespace
         const ecoIcons = ecoArray.map(eco => {
-            const imagePath = `img/${eco.toLowerCase()}.svg`; // Construct image path based on ecosystem name
-            return `<img src="${imagePath}" alt="${eco}" class="eco-icon" style="width: 20px; height: 20px; vertical-align: middle;">`; // Set size and align
+            const imagePath = `img/eco/${eco.toLowerCase()}.svg`; // Construct image path based on ecosystem name
+            return `<img src="${imagePath}" alt="${eco}" class="eco-icon">`; // Set size and align
         }).filter(icon => icon !== ''); // Filter out any empty icons
 
         const uniqueEcos = [...new Set(ecoArray)]; // Get unique ecosystems
@@ -108,16 +108,38 @@ document.addEventListener("DOMContentLoaded", function() {
                 // Add the website field with an icon
                 const websiteField = project.website ? `<a href="${project.website}" target="_blank"><i class="fas fa-link"></i></a>` : '';
 
-                itemDiv.innerHTML = `
-                        <h3 class="card-title">${project.name}</h3>
+                const imagePath = `img/projects/${project.name.toLowerCase().replace(/ /g, '-').replace(/\./g, '')}.png`;
+                const img = new Image();
+                img.src = imagePath;
+
+                img.onload = () => {
+                    const projectTitle = `<h3 class="card-title"><img src="${imagePath}" alt="${project.name}" class="project-icon"> ${project.name}</h3>`;
+                    itemDiv.innerHTML = `
+                        ${projectTitle}
                         <p><strong>Category:</strong> ${category}</p>
                         <p>${xFieldContent} ${websiteField}</p>
                         <p class="card-description">${project.description}</p>
                         ${ecoFieldContent}
                         <p><strong>Status:</strong> ${formattedStatus}</p>
                         <p><strong>People:</strong> ${project.people}</p>
-                `;
-                itemContainer.appendChild(itemDiv);
+                    `;
+                    itemContainer.appendChild(itemDiv);
+                };
+
+                img.onerror = () => {
+                    // If the image fails to load, add the item without the image
+                    const projectTitle = `<h3 class="card-title">${project.name}</h3>`;
+                    itemDiv.innerHTML = `
+                        ${projectTitle}
+                        <p><strong>Category:</strong> ${category}</p>
+                        <p>${xFieldContent} ${websiteField}</p>
+                        <p class="card-description">${project.description}</p>
+                        ${ecoFieldContent}
+                        <p><strong>Status:</strong> ${formattedStatus}</p>
+                        <p><strong>People:</strong> ${project.people}</p>
+                    `;
+                    itemContainer.appendChild(itemDiv);
+                };
             });
         }
     }
@@ -266,7 +288,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 const itemDiv = document.createElement("div");
                 itemDiv.classList.add("card"); // Add the card class for styling
 
-                // Format the "X" field as a hyperlink with the new Twitter "X" icon
+                const imagePath = `img/projects/${project.name.toLowerCase().replace(/ /g, '-').replace(/\./g, '')}.png`;
+                const img = new Image();
+                img.src = imagePath;
+
+                // Define variables for the project details
                 const xFieldMatch = project.x.match(/\[(.+?)\]\((.+?)\)/); // Match [Name](URL)
                 let xFieldContent = project.x; // Default to original if no match
 
@@ -279,28 +305,41 @@ document.addEventListener("DOMContentLoaded", function() {
                 // Format the Status field to be italic
                 const formattedStatus = `<em>${project.status}</em>`; // Wrap status in <em> tags
 
-                // Conditionally render the Eco field
+                // Conditionally render the Eco field with the appropriate icons
                 const { icons: ecoIcons } = getEcoIcon(project.eco);
-                const ecoFieldContent = project.eco ? `<strong>Eco:</strong> ${ecoIcons}` : '';
+                const ecoFieldContent = project.eco ? `<p><strong>Eco:</strong> ${ecoIcons}</p>` : '';
 
                 // Add the website field with an icon
                 const websiteField = project.website ? `<a href="${project.website}" target="_blank"><i class="fas fa-link"></i></a>` : '';
 
-                // Add the category tag
-                const categoryTag = `<strong>Category:</strong> ${category}`; // Assuming project.category exists
+                img.onload = () => {
+                    const projectTitle = `<h3 class="card-title"><img src="${imagePath}" alt="${project.name}" class="project-icon"> ${project.name}</h3>`;
+                    itemDiv.innerHTML = `
+                        ${projectTitle}
+                        <p><strong>Category:</strong> ${category}</p>
+                        <p>${xFieldContent} ${websiteField}</p>
+                        <p class="card-description">${project.description}</p>
+                        ${ecoFieldContent}
+                        <p><strong>Status:</strong> ${formattedStatus}</p>
+                        <p><strong>People:</strong> ${project.people}</p>
+                    `;
+                    cardContainer.appendChild(itemDiv);
+                };
 
-                itemDiv.innerHTML = `
-                    <h3 class="card-title">${project.name}</h3>
-                    <p>${categoryTag}</p>
-                    <p>${xFieldContent} ${websiteField}</p>
-                    <p>${project.description}</p>
-                    ${ecoFieldContent}
-                    <p><strong>Status:</strong> ${formattedStatus}</p>
-                    <p><strong>People:</strong> ${project.people}</p>
-                `;
-
-                // Append the card to the card container
-                cardContainer.appendChild(itemDiv);
+                img.onerror = () => {
+                    // If the image fails to load, add the item without the image
+                    const projectTitle = `<h3 class="card-title">${project.name}</h3>`;
+                    itemDiv.innerHTML = `
+                        ${projectTitle}
+                        <p><strong>Category:</strong> ${category}</p>
+                        <p>${xFieldContent} ${websiteField}</p>
+                        <p class="card-description">${project.description}</p>
+                        ${ecoFieldContent}
+                        <p><strong>Status:</strong> ${formattedStatus}</p>
+                        <p><strong>People:</strong> ${project.people}</p>
+                    `;
+                    cardContainer.appendChild(itemDiv);
+                };
             });
 
             // Append the card container to the item container

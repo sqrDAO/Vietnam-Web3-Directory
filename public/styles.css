@@ -223,6 +223,18 @@ p {
     margin: 5px 0; /* Margin for paragraphs */
 }
 
+.eco-icon {
+    width: auto;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.project-icon {
+    width: auto;
+    height: 40px;
+    vertical-align: middle;
+}
+
 .filter-container {
     display: flex; /* Use flexbox for layout */
     justify-content: space-between; /* Space between elements */
