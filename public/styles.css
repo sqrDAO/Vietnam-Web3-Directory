@@ -117,7 +117,7 @@ footer {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-#search-input, #category-filter, #eco-filter {
+#search-input, #category-filter, #chain-filter {
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -134,7 +134,7 @@ footer {
     margin-right: 10px;
 }
 
-#eco-filter {
+#chain-filter {
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -198,7 +198,7 @@ footer {
         flex-direction: column;
     }
 
-    #search-input, #category-filter, #eco-filter {
+    #search-input, #category-filter, #chain-filter {
         margin: 0 0 10px 0;
         width: 100%;
     }
@@ -239,7 +239,7 @@ footer {
 }
 
 /* Eco icons */
-.eco-icon {
+.chain-icon {
     width: auto;
     height: 20px;
     margin-right: 5px;

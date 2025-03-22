@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const itemContainer = document.querySelector("#tables-container");
     const categoryFilter = document.getElementById("category-filter");
     const searchInput = document.getElementById("search-input");
-    const ecoFilter = document.getElementById("eco-filter");
+    const chainFilter = document.getElementById("chain-filter");
 
     showLoading();
 
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
             console.log("README.md loaded successfully.");
             Object.assign(allData, parseAllData(data)); // Store parsed data
             populateItems(allData); // Populate items initially
-            populateEcoFilter(allData);
+            populateChainFilter(allData);
             hideLoading();
         })
         .catch(error => {
@@ -28,58 +28,58 @@ document.addEventListener("DOMContentLoaded", function() {
 
     categoryFilter.addEventListener('change', function() {
         const selectedCategory = this.value;
-        filterItems(selectedCategory, searchInput.value, ecoFilter.value.toLowerCase());
+        filterItems(selectedCategory, searchInput.value, chainFilter.value.toLowerCase());
     });
 
     searchInput.addEventListener('input', function() {
         const searchTerm = this.value.toLowerCase();
-        filterItems(categoryFilter.value, searchTerm, ecoFilter.value.toLowerCase());
+        filterItems(categoryFilter.value, searchTerm, chainFilter.value.toLowerCase());
     });
 
-    ecoFilter.addEventListener('change', function() {
-        const selectedEco = this.value.toLowerCase();
-        filterItems(categoryFilter.value, searchInput.value.toLowerCase(), selectedEco);
+    chainFilter.addEventListener('change', function() {
+        const selectedChain = this.value.toLowerCase();
+        filterItems(categoryFilter.value, searchInput.value.toLowerCase(), selectedChain);
     });
 
-    // Populate Eco filter options
-    function populateEcoFilter(allData) {
-        ecoFilter.innerHTML = '';
+    // Populate Chain filter options
+    function populateChainFilter(allData) {
+        chainFilter.innerHTML = '';
         const allOption = document.createElement("option");
         allOption.value = "all";
         allOption.textContent = "All Chains";
-        ecoFilter.appendChild(allOption);
+        chainFilter.appendChild(allOption);
 
-        const ecoSet = new Set();
+        const chainSet = new Set();
         for (const category in allData) {
             allData[category].forEach(project => {
-                if (project.eco) {
-                    project.eco.split(',').forEach(eco => ecoSet.add(eco.trim()));
+                if (project.chain) {
+                    project.chain.split(',').forEach(chain => chainSet.add(chain.trim()));
                 }
             });
         }
 
-        ecoSet.forEach(eco => {
+        chainSet.forEach(chain => {
             const option = document.createElement("option");
-            option.value = eco.toLowerCase();
-            option.textContent = eco;
-            ecoFilter.appendChild(option);
+            option.value = chain.toLowerCase();
+            option.textContent = chain;
+            chainFilter.appendChild(option);
         });
     }
 
-    function getEcoIcon(ecos) {
-        if (!ecos) {
-            return { icons: '', count: 0 }; // Return empty if ecos is null or undefined
+    function getchainIcon(chains) {
+        if (!chains) {
+            return { icons: '', count: 0 }; // Return empty if chains is null or undefined
         }
 
-        const ecoArray = ecos.split(',').map(eco => eco.trim()); // Split by comma and trim whitespace
-        const ecoIcons = ecoArray.map(eco => {
-            const imagePath = `img/eco/${eco.toLowerCase()}.svg`; // Construct image path based on ecosystem name
-            return `<img src="${imagePath}" alt="${eco}" class="eco-icon">`; // Set size and align
+        const chainArray = chains.split(',').map(chain => chain.trim()); // Split by comma and trim whitespace
+        const chainIcons = chainArray.map(chain => {
+            const imagePath = `img/chains/${chain.toLowerCase()}.svg`; // Construct image path based on chainsystem name
+            return `<img src="${imagePath}" alt="${chain}" class="chain-icon">`; // Set size and align
         }).filter(icon => icon !== ''); // Filter out any empty icons
 
-        const uniqueEcos = [...new Set(ecoArray)]; // Get unique ecosystems
-        const count = uniqueEcos.length; // Count unique ecosystems
-        return { icons: ecoIcons.join(' '), count }; // Return icons and count
+        const uniquechains = [...new Set(chainArray)]; // Get unique chainsystems
+        const count = uniquechains.length; // Count unique chainsystems
+        return { icons: chainIcons.join(' '), count }; // Return icons and count
     }
 
     function createProjectCard(project, category) {
@@ -95,8 +95,8 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         const formattedStatus = `<em>${project.status}</em>`;
-        const { icons: ecoIcons } = getEcoIcon(project.eco);
-        const ecoFieldContent = project.eco ? `<p><strong>Chains:</strong> ${ecoIcons}</p>` : '';
+        const { icons: chainIcons } = getchainIcon(project.chain);
+        const chainFieldContent = project.chain ? `<p><strong>Chains:</strong> ${chainIcons}</p>` : '';
         const websiteField = project.website ? `<a href="${project.website}" target="_blank"><i class="fas fa-link"></i></a>` : '';
 
         const imagePath = `img/projects/${project.name.toLowerCase().replace(/ /g, '-').replace(/\./g, '')}.png`;
@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 <p><strong>Category:</strong> ${category}</p>
                 <p>${xFieldContent} ${websiteField}</p>
                 <p class="card-description">${project.description}</p>
-                ${ecoFieldContent}
+                ${chainFieldContent}
                 <p><strong>Status:</strong> ${formattedStatus}</p>
                 <p><strong>People:</strong> ${project.people}</p>
             `;
@@ -125,11 +125,11 @@ document.addEventListener("DOMContentLoaded", function() {
         return itemDiv;
     }
 
-    function filterItems(selectedCategory, searchTerm, selectedEco) {
+    function filterItems(selectedCategory, searchTerm, selectedchain) {
         itemContainer.innerHTML = '';
         itemContainer.classList.add("card-container");
 
-        if (selectedCategory === "all" && searchTerm === "" && selectedEco === "all") {
+        if (selectedCategory === "all" && searchTerm === "" && selectedchain === "all") {
             populateItems(allData);
             return;
         }
@@ -139,11 +139,11 @@ document.addEventListener("DOMContentLoaded", function() {
         for (const category in allData) {
             if (selectedCategory === "all" || selectedCategory === category) {
                 allData[category].forEach(project => {
-                    const ecoNames = project.eco ? project.eco.toLowerCase().split(',').map(e => e.trim()) : [];
-                    const matchesSearch = project.name.toLowerCase().includes(searchTerm) || ecoNames.some(eco => eco.includes(searchTerm));
-                    const matchesEco = selectedEco === "all" || ecoNames.includes(selectedEco);
+                    const chainNames = project.chain ? project.chain.toLowerCase().split(',').map(e => e.trim()) : [];
+                    const matchesSearch = project.name.toLowerCase().includes(searchTerm) || chainNames.some(chain => chain.includes(searchTerm));
+                    const matcheschain = selectedchain === "all" || chainNames.includes(selectedchain);
 
-                    if (matchesSearch && matchesEco) {
+                    if (matchesSearch && matcheschain) {
                         if (!groupedItems[category]) {
                             groupedItems[category] = [];
                         }
@@ -258,7 +258,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     name: projectName,
                     website: projectWebsite, // Store the website separately
                     description: columns[1],
-                    eco: categoryName === "Events" ? null : columns[2], // Store eco only if not Events
+                    chain: categoryName === "Events" ? null : columns[2], // Store chain only if not Events
                     x: categoryName === "Events" ? columns[2] : columns[3],
                     status: categoryName === "Events" ? columns[3].replace(/`/g, '') : columns[4].replace(/`/g, ''), // Remove backticks from status
                     people: formattedPeople // Store formatted people
