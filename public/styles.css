@@ -232,7 +232,7 @@ footer {
 
 /* Project icon */
 .project-icon {
-    width: 24px;
+    width: auto;
     height: 24px;
     vertical-align: middle;
     margin-right: 8px;
@@ -240,7 +240,7 @@ footer {
 
 /* Eco icons */
 .eco-icon {
-    width: 20px;
+    width: auto;
     height: 20px;
     margin-right: 5px;
     vertical-align: middle;
