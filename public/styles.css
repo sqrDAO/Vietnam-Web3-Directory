@@ -58,9 +58,14 @@ main {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 20px;
+    padding: 40px 20px;
+    height: 300px; /* Set height back to previous value */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
     text-align: center;
-    position: relative;
+    color: var(--text-color); /* Set header text color to white for better contrast */
 }
 
 .header p {
