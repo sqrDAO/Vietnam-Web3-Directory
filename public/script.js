@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
         ecoFilter.innerHTML = '';
         const allOption = document.createElement("option");
         allOption.value = "all";
-        allOption.textContent = "All Ecosystems";
+        allOption.textContent = "All Chains";
         ecoFilter.appendChild(allOption);
 
         const ecoSet = new Set();
@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         const formattedStatus = `<em>${project.status}</em>`;
         const { icons: ecoIcons } = getEcoIcon(project.eco);
-        const ecoFieldContent = project.eco ? `<p><strong>Ecosystems:</strong> ${ecoIcons}</p>` : '';
+        const ecoFieldContent = project.eco ? `<p><strong>Chains:</strong> ${ecoIcons}</p>` : '';
         const websiteField = project.website ? `<a href="${project.website}" target="_blank"><i class="fas fa-link"></i></a>` : '';
 
         const imagePath = `img/projects/${project.name.toLowerCase().replace(/ /g, '-').replace(/\./g, '')}.png`;
