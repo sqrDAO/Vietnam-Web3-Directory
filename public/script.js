@@ -73,12 +73,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
         const chainArray = chains.split(',').map(chain => chain.trim()); // Split by comma and trim whitespace
         const chainIcons = chainArray.map(chain => {
-            const imagePath = `img/chains/${chain.toLowerCase()}.svg`; // Construct image path based on chainsystem name
+            const imagePath = `img/chains/${chain.toLowerCase()}.svg`; // Construct image path based on chain name
             return `<img src="${imagePath}" alt="${chain}" class="chain-icon">`; // Set size and align
         }).filter(icon => icon !== ''); // Filter out any empty icons
 
-        const uniquechains = [...new Set(chainArray)]; // Get unique chainsystems
-        const count = uniquechains.length; // Count unique chainsystems
+        const uniquechains = [...new Set(chainArray)]; // Get unique chains
+        const count = uniquechains.length; // Count unique chains
         return { icons: chainIcons.join(' '), count }; // Return icons and count
     }
 
