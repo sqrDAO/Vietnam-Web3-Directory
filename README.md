@@ -8,7 +8,7 @@ Your Ultimate Guide to the Vibrant Web3 Ecosystem in Vietnam! 🌟
 
 ## Sectors
 
-### Chains
+### Infrastructure
 
 | Name | Description | Eco | X | Status | Founders |
 |------|-------------|-----|---|--------|----------|
