@@ -1,9 +1,9 @@
 :root {
-    --primary-color: #1E1E2F; /* Dark blue for headers and backgrounds */
+    --primary-color: #000000; /* Changed from dark blue to black */
     --secondary-color: rgba(245, 245, 245, 0.9); /* Light gray with reduced opacity */
-    --accent-color: #FFCC00; /* Yellow for highlights */
-    --text-color: #FFFFFF; /* Change text color to white for better contrast */
-    --subtext-color: #333333; /* Darker gray for subtext */
+    --accent-color: #FFFFFF; /* Changed from yellow to white */
+    --text-color: #FFFFFF; /* Keeping white text */
+    --subtext-color: #333333; /* Keeping dark gray for subtext */
 }
 
 /* Base styles */
@@ -239,18 +239,20 @@ footer {
 
 /* CTA Button */
 .cta-button {
-    background-color: var(--accent-color);
-    color: var(--primary-color);
-    border: none;
+    background-color: var(--primary-color); /* Changed to black background */
+    color: var(--accent-color); /* Changed to white text */
+    border: 2px solid var(--accent-color); /* Added white border */
     padding: 12px 24px;
     border-radius: 4px;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
     margin-top: 15px;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease; /* Changed to transition all properties */
 }
 
 .cta-button:hover {
-    background-color: darken(var(--accent-color), 10%);
+    background-color: var(--accent-color); /* Changed to white on hover */
+    color: var(--primary-color); /* Changed to black text on hover */
+    transform: scale(1.05); /* Added slight scale effect on hover */
 }
