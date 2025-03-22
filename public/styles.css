@@ -1,11 +1,12 @@
 :root {
-    --primary-color: #1E1E2F; /* Dark blue for headers and backgrounds */
+    --primary-color: #000000; /* Changed from dark blue to black */
     --secondary-color: rgba(245, 245, 245, 0.9); /* Light gray with reduced opacity */
-    --accent-color: #FFCC00; /* Yellow for highlights */
-    --text-color: #FFFFFF; /* Change text color to white for better contrast */
-    --subtext-color: #333333; /* Darker gray for subtext */
+    --accent-color: #FFFFFF; /* Changed from yellow to white */
+    --text-color: #FFFFFF; /* Keeping white text */
+    --subtext-color: #333333; /* Keeping dark gray for subtext */
 }
 
+/* Base styles */
 body {
     font-family: "Helvetica Neue", sans-serif; /* Clean font */
     margin: 0;
@@ -15,21 +16,22 @@ body {
     line-height: 1.6; /* Improve readability */
     display: flex;
     flex-direction: column; /* Stack children vertically */
+    min-height: 100vh;
 }
 
+/* Typography */
 h1, h2, h3 {
     color: var(--primary-color); /* Use primary color for headings */
+    margin: 20px 0; /* Margin for main heading */
 }
 
 h1 {
-    margin: 20px 0; /* Margin for main heading */
     text-align: center; /* Center align main heading */
     font-size: 2.5em; /* Main heading size */
     color: var(--text-color); /* Change main heading color */
 }
 
 h2 {
-    color: var(--primary-color); /* Change category headers to accent color */
     margin-top: 20px; /* Space above category headers */
     margin-bottom: 10px; /* Space below category headers */
     font-size: 2em; /* Category heading size */
@@ -41,11 +43,58 @@ h3 {
     color: var(--subtext-color); /* Change subheading color */
 }
 
+/* Layout */
 main {
     flex: 1; /* Allow main to grow and take available space */
     padding: 20px; /* Add padding for main content */
 }
 
+/* Header styles */
+.header {
+    background-color: var(--primary-color);
+    background-image: 
+        linear-gradient(to bottom, rgba(30, 30, 47, 0.8), rgba(30, 30, 47, 0.6)),
+        url('img/tron-le-wUk2U5Wirxg-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px 20px;
+    height: 300px; /* Set height back to previous value */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center;
+    color: var(--text-color); /* Set header text color to white for better contrast */
+}
+
+.header p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: var(--text-color);
+}
+
+.header .built-by {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .built-by p {
+    margin: 0;
+}
+
+.header .built-by img {
+    margin-left: 10px;
+    width: 60px;
+    height: auto;
+    opacity: 1;
+    filter: none;
+    z-index: 2;
+}
+
+/* Footer styles */
 footer {
     display: flex;
     justify-content: space-between;
@@ -56,269 +105,163 @@ footer {
     text-align: center; /* Center text */
 }
 
-
-
-.button {
-    background-color: #00aaff; /* Change to a blue color */
-    color: #ffffff; /* White text color */
-    border: none; /* No border */
-    border-radius: 4px; /* Rounded corners */
-    padding: 12px 24px; /* Padding */
-    font-size: 16px; /* Font size */
-    cursor: pointer; /* Pointer cursor */
-    transition: background-color 0.3s; /* Smooth background transition */
-    margin-top: 20px; /* Space above the button */
-}
-
-.button:hover {
-    background-color: #0077cc; /* Darker blue on hover */
-}
-
-.header {
-    position: relative; /* Position relative for the overlay */
-    background-image: url('img/tron-le-wUk2U5Wirxg-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 40px 20px; /* Adjust padding for better spacing */
-    height: 300px; /* Set height back to previous value */
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Stack items vertically */
-    justify-content: center; /* Center items vertically */
-    align-items: center; /* Center items horizontally */
-    text-align: center;
-    color: var(--text-color); /* Set header text color to white for better contrast */
-}
-
-.header::after {
-    content: ""; /* Create a pseudo-element for overlay */
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay to reduce brightness */
-    z-index: 1; /* Ensure overlay is above the background */
-}
-
-.header h1, .header p {
-    position: relative; /* Position relative for text */
-    z-index: 2; /* Ensure text is above the overlay */
-}
-
-.header h1 {
-    font-family: 'Arial', sans-serif;
-    font-size: 2.5em; /* Set back to previous size for the main heading */
-    margin: 20px 0; /* Margin for main heading */
-}
-
-.header p {
-    font-family: 'Arial', sans-serif;
-    font-size: 1.5em; /* Set back to previous size for the paragraph */
-    margin: 10px 0;
-    color: var(--text-color); /* Set paragraph text color to white */
-}
-
-.header a {
-    z-index: 2;
-}
-
-.header .built-by {
-    display: flex;
-    align-items: center; /* Center items vertically */
-}
-
-.header .built-by p {
-    margin: 0; /* Remove default margin */
-}
-
-.header .built-by img {
-    margin-left: 10px; /* Add left margin to create space */
-    width: 60px; /* Adjust width as needed */
-    height: auto; /* Maintain aspect ratio */
-    opacity: 1; /* Ensure opacity is set to 1 */
-    filter: none; /* Remove any filters that might grey it out */
-    z-index: 2;
-}
-
-/* Styling for the search bar */
-.search-bar {
-    border: 2px solid #4A90E2; /* Change border color */
-    border-radius: 8px; /* Rounded corners */
-    padding: 10px; /* Padding for better spacing */
-    font-size: 16px; /* Font size */
-    width: 100%; /* Full width */
-}
-
-/* Styling for card titles */
-.card-title {
-    font-size: 18px; /* Title font size */
-    font-weight: bold; /* Bold title */
-    color: var(--primary-color); /* Change card title color */
-}
-
-/* Styling for card descriptions */
-.card-description {
-    font-size: 14px; /* Description font size */
-    color: var(--subtext-color); /* Change card description color */
-}
-
-.sqrdao-logo {
-    width: 60px; /* Adjust width as needed */
-    height: auto; /* Maintain aspect ratio */
-    margin-top: 10px; /* Space between text and image */
-    opacity: 1; /* Ensure opacity is set to 1 */
-    filter: none; /* Remove any filters that might grey it out */
-}
-
-html, body {
-    height: 100%; /* Ensure the body takes the full height */
-    margin: 0; /* Remove default margin */
-}
-
-.cta-button {
-    background-color: #4CAF50; /* Green background */
-    color: white; /* White text */
-    border: none; /* No border */
-    padding: 10px 20px; /* Padding */
-    text-align: center; /* Centered text */
-    text-decoration: none; /* No underline */
-    display: inline-block; /* Inline-block for proper spacing */
-    font-size: 16px; /* Font size */
-    margin: 10px 0; /* Margin */
-    cursor: pointer; /* Pointer cursor on hover */
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s; /* Smooth transition */
-    z-index: 2;
-}
-
-.cta-button:hover {
-    background-color: #45a049; /* Darker green on hover */
-}
-
-.card-container {
-    display: flex; /* Use flexbox for layout */
-    flex-wrap: wrap; /* Allow cards to wrap to the next line if necessary */
-    margin: 20px 0; /* Margin above and below the card container */
-}
-
-.card {
-    background-color: #FFFFFF; /* White background */
-    border: 1px solid #E0E0E0; /* Light border */
-    border-radius: 8px; /* Rounded corners */
-    padding: 20px; /* Padding */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    transition: transform 0.2s; /* Smooth transition */
-    margin: 10px; /* Margin around each card */
-    flex: 1 1 calc(33.33% - 20px); /* Set to take up 1/3 of the container width minus margin */
-    max-width: calc(33.33% - 20px); /* Set a maximum width for the card */
-    box-sizing: border-box; /* Ensure padding and border are included in the width */
-}
-
-.card:hover {
-    transform: scale(1.02); /* Slightly enlarge on hover */
-}
-
-p {
-    margin: 5px 0; /* Margin for paragraphs */
-}
-
-.eco-icon {
-    width: auto;
-    height: 20px;
-    vertical-align: middle;
-}
-
-.project-icon {
-    width: auto;
-    height: 40px;
-    vertical-align: middle;
-}
-
+/* Filter and search styles */
 .filter-container {
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Space between elements */
-    align-items: center; /* Center items vertically */
-    margin-bottom: 20px; /* Space below the filter */
-    padding: 10px; /* Add padding for better spacing */
-    background-color: var(--secondary-color); /* Light gray background */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#search-input, #category-filter, #chain-filter {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
 }
 
 #search-input {
-    flex: 2; /* Allow the search input to grow more */
-    padding: 12px; /* Padding inside the input */
-    border: 1px solid #ccc; /* Light gray border */
-    border-radius: 4px; /* Rounded corners */
-    font-size: 16px; /* Font size */
-    margin-right: 10px; /* Space between input and select */
+    flex: 2;
+    margin-right: 10px;
 }
 
 #category-filter {
-    flex: 1; /* Allow the category filter to grow */
-    padding: 12px; /* Padding inside the select */
-    border: 1px solid #ccc; /* Light gray border */
-    border-radius: 4px; /* Rounded corners */
-    font-size: 16px; /* Font size */
-    margin-right: 10px; /* Space between select and button */
+    flex: 0.5;
+    margin-right: 10px;
 }
 
-#category-filter option {
-    padding: 10px; /* Padding for options */
+#chain-filter {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    flex: 0.5; /* Ensure it takes up space similar to the other filters */
+    margin-left: 10px; /* Add margin to separate from the previous input */
 }
 
+/* Card container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: -10px; /* Negative margin to offset card margins */
+    width: 100%;
+}
+
+/* Card styles */
+.card {
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 20px); /* Fixed width for 3 items per row */
+    box-sizing: border-box;
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Add smooth transition */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+    cursor: pointer; /* Show pointer cursor on hover */
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.card-description {
+    font-size: 14px;
+    color: var(--subtext-color);
+}
+
+/* Utility classes */
 .loading {
     text-align: center;
     font-size: 18px;
-    color: white; /* Change to white for better visibility */
-    /* Alternatively, use color: transparent; for transparency */
+    color: white;
 }
 
 :focus {
-    outline: 2px solid #c8102e; /* Highlight focused elements */
+    outline: 2px solid #c8102e;
 }
 
+/* Media queries */
 @media (max-width: 768px) {
     .filter-container {
-        flex-direction: column; /* Stack elements on smaller screens */
+        flex-direction: column;
     }
 
-    #search-input, #category-filter {
-        margin-right: 0; /* Remove right margin */
-        margin-bottom: 10px; /* Add bottom margin */
-        width: 100%; /* Full width on smaller screens */
+    #search-input, #category-filter, #chain-filter {
+        margin: 0 0 10px 0;
+        width: 100%;
     }
 
     .card {
-        flex: 1 1 calc(50% - 20px); /* Adjust to 50% width on smaller screens */
-        max-width: calc(50% - 20px); /* Set a maximum width for the card */
+        width: calc(50% - 20px); /* 2 items per row on tablets */
     }
 
-    .header h1 {
-        font-size: 2em; /* Reduce main heading size */
-    }
-
-    .header p {
-        font-size: 1.2em; /* Reduce paragraph size */
-    }
-
-    .header .built-by img {
-        width: 40px; /* Reduce image size */
+    .header {
+        h1 { font-size: 2em; }
+        p { font-size: 1.2em; }
+        .built-by img { width: 40px; }
     }
 }
 
 @media (max-width: 480px) {
     .card {
-        flex: 1 1 100%; /* Full width on very small screens */
-        max-width: 100%; /* Ensure maximum width is 100% */
+        width: 100%; /* Full width on mobile */
+        margin: 10px 0;
+    }
+    
+    .card-container {
+        margin: 0;
     }
 
-    .header h1 {
-        font-size: 1.8em; /* Reduce main heading size */
+    .header {
+        h1 { font-size: 1.8em; }
+        p { font-size: 1em; }
     }
+}
 
-    .header p {
-        font-size: 1em; /* Reduce paragraph size */
-    }
+/* Project icon */
+.project-icon {
+    width: auto;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+/* Eco icons */
+.chain-icon {
+    width: auto;
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+/* CTA Button */
+.cta-button {
+    background-color: var(--primary-color); /* Changed to black background */
+    color: var(--accent-color); /* Changed to white text */
+    border: 2px solid var(--accent-color); /* Added white border */
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.3s ease; /* Changed to transition all properties */
+}
+
+.cta-button:hover {
+    background-color: var(--accent-color); /* Changed to white on hover */
+    color: var(--primary-color); /* Changed to black text on hover */
+    transform: scale(1.05); /* Added slight scale effect on hover */
 }

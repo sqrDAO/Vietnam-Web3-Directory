@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const itemContainer = document.querySelector("#tables-container");
     const categoryFilter = document.getElementById("category-filter");
     const searchInput = document.getElementById("search-input");
+    const chainFilter = document.getElementById("chain-filter");
 
     showLoading();
 
@@ -17,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
             console.log("README.md loaded successfully.");
             Object.assign(allData, parseAllData(data)); // Store parsed data
             populateItems(allData); // Populate items initially
+            populateChainFilter(allData);
             hideLoading();
         })
         .catch(error => {
@@ -26,49 +28,122 @@ document.addEventListener("DOMContentLoaded", function() {
 
     categoryFilter.addEventListener('change', function() {
         const selectedCategory = this.value;
-        filterItems(selectedCategory, searchInput.value);
+        filterItems(selectedCategory, searchInput.value, chainFilter.value.toLowerCase());
     });
 
     searchInput.addEventListener('input', function() {
         const searchTerm = this.value.toLowerCase();
-        filterItems(categoryFilter.value, searchTerm);
+        filterItems(categoryFilter.value, searchTerm, chainFilter.value.toLowerCase());
     });
 
-    function getEcoIcon(ecos) {
-        if (!ecos) {
-            return { icons: '', count: 0 }; // Return empty if ecos is null or undefined
+    chainFilter.addEventListener('change', function() {
+        const selectedChain = this.value.toLowerCase();
+        filterItems(categoryFilter.value, searchInput.value.toLowerCase(), selectedChain);
+    });
+
+    // Populate Chain filter options
+    function populateChainFilter(allData) {
+        chainFilter.innerHTML = '';
+        const allOption = document.createElement("option");
+        allOption.value = "all";
+        allOption.textContent = "All Chains";
+        chainFilter.appendChild(allOption);
+
+        const chainSet = new Set();
+        for (const category in allData) {
+            allData[category].forEach(project => {
+                if (project.chain) {
+                    project.chain.split(',').forEach(chain => chainSet.add(chain.trim()));
+                }
+            });
         }
 
-        const ecoArray = ecos.split(',').map(eco => eco.trim()); // Split by comma and trim whitespace
-        const ecoIcons = ecoArray.map(eco => {
-            const imagePath = `img/eco/${eco.toLowerCase()}.svg`; // Construct image path based on ecosystem name
-            return `<img src="${imagePath}" alt="${eco}" class="eco-icon">`; // Set size and align
-        }).filter(icon => icon !== ''); // Filter out any empty icons
-
-        const uniqueEcos = [...new Set(ecoArray)]; // Get unique ecosystems
-        const count = uniqueEcos.length; // Count unique ecosystems
-        return { icons: ecoIcons.join(' '), count }; // Return icons and count
+        chainSet.forEach(chain => {
+            const option = document.createElement("option");
+            option.value = chain.toLowerCase();
+            option.textContent = chain;
+            chainFilter.appendChild(option);
+        });
     }
 
-    function filterItems(selectedCategory, searchTerm) {
-        itemContainer.innerHTML = ''; // Clear existing items
-        itemContainer.classList.add("card-container");
-
-        // Check if we need to reload all data
-        if (selectedCategory === "all" && searchTerm === "") {
-            populateItems(allData); // Reload all data
-            return; // Exit the function early
+    function getchainIcon(chains) {
+        if (!chains) {
+            return { icons: '', count: 0 }; // Return empty if chains is null or undefined
         }
 
-        // Create a temporary object to hold grouped items
+        const chainArray = chains.split(',').map(chain => chain.trim()); // Split by comma and trim whitespace
+        const chainIcons = chainArray.map(chain => {
+            const imagePath = `img/chains/${chain.toLowerCase()}.svg`; // Construct image path based on chainsystem name
+            return `<img src="${imagePath}" alt="${chain}" class="chain-icon">`; // Set size and align
+        }).filter(icon => icon !== ''); // Filter out any empty icons
+
+        const uniquechains = [...new Set(chainArray)]; // Get unique chainsystems
+        const count = uniquechains.length; // Count unique chainsystems
+        return { icons: chainIcons.join(' '), count }; // Return icons and count
+    }
+
+    function createProjectCard(project, category) {
+        const itemDiv = document.createElement("div");
+        itemDiv.classList.add("card");
+
+        const xFieldMatch = project.x.match(/\[(.+?)\]\((.+?)\)/);
+        let xFieldContent = project.x;
+
+        if (xFieldMatch) {
+            const linkUrl = xFieldMatch[2];
+            xFieldContent = `<a href="${linkUrl}" target="_blank"><i class="fab fa-x-twitter"></i></a>`;
+        }
+
+        const formattedStatus = `<em>${project.status}</em>`;
+        const { icons: chainIcons } = getchainIcon(project.chain);
+        const chainFieldContent = project.chain ? `<p><strong>Chains:</strong> ${chainIcons}</p>` : '';
+        const websiteField = project.website ? `<a href="${project.website}" target="_blank"><i class="fas fa-link"></i></a>` : '';
+
+        const imagePath = `img/projects/${project.name.toLowerCase().replace(/ /g, '-').replace(/\./g, '')}.png`;
+        const img = new Image();
+        img.src = imagePath;
+
+        const renderCard = (withImage = false) => {
+            const projectTitle = withImage ? 
+                `<h3 class="card-title"><img src="${imagePath}" alt="${project.name}" class="project-icon"> ${project.name}</h3>` :
+                `<h3 class="card-title">${project.name}</h3>`;
+            
+            itemDiv.innerHTML = `
+                ${projectTitle}
+                <p><strong>Category:</strong> ${category}</p>
+                <p>${xFieldContent} ${websiteField}</p>
+                <p class="card-description">${project.description}</p>
+                ${chainFieldContent}
+                <p><strong>Status:</strong> ${formattedStatus}</p>
+                <p><strong>People:</strong> ${project.people}</p>
+            `;
+        };
+
+        img.onload = () => renderCard(true);
+        img.onerror = () => renderCard(false);
+
+        return itemDiv;
+    }
+
+    function filterItems(selectedCategory, searchTerm, selectedchain) {
+        itemContainer.innerHTML = '';
+        itemContainer.classList.add("card-container");
+
+        if (selectedCategory === "all" && searchTerm === "" && selectedchain === "all") {
+            populateItems(allData);
+            return;
+        }
+
         const groupedItems = {};
 
         for (const category in allData) {
             if (selectedCategory === "all" || selectedCategory === category) {
                 allData[category].forEach(project => {
-                    // Check if the project name includes the search term
-                    if (project.name.toLowerCase().includes(searchTerm)) {
-                        // If the category is not already in the groupedItems, create an array for it
+                    const chainNames = project.chain ? project.chain.toLowerCase().split(',').map(e => e.trim()) : [];
+                    const matchesSearch = project.name.toLowerCase().includes(searchTerm) || chainNames.some(chain => chain.includes(searchTerm));
+                    const matcheschain = selectedchain === "all" || chainNames.includes(selectedchain);
+
+                    if (matchesSearch && matcheschain) {
                         if (!groupedItems[category]) {
                             groupedItems[category] = [];
                         }
@@ -78,68 +153,13 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
 
-        // Now populate the items from the groupedItems object
         for (const category in groupedItems) {
             const categoryHeader = document.createElement("h2");
-            categoryHeader.textContent = category; // Use the category name as the header
-            // itemContainer.appendChild(categoryHeader);
+            categoryHeader.textContent = category;
 
             groupedItems[category].forEach(project => {
-                const itemDiv = document.createElement("div");
-                itemDiv.classList.add("card");
-
-                // Format the "X" field as a hyperlink with the new Twitter "X" icon
-                const xFieldMatch = project.x.match(/\[(.+?)\]\((.+?)\)/); // Match [Name](URL)
-                let xFieldContent = project.x; // Default to original if no match
-
-                if (xFieldMatch) {
-                    const linkText = xFieldMatch[1]; // Text inside []
-                    const linkUrl = xFieldMatch[2]; // URL inside ()
-                    xFieldContent = `<a href="${linkUrl}" target="_blank"><i class="fab fa-x-twitter"></i></a>`; // Create hyperlink with new Twitter "X" icon
-                }
-
-                // Format the Status field to be italic
-                const formattedStatus = `<em>${project.status}</em>`; // Wrap status in <em> tags
-
-                // Conditionally render the Eco field with the appropriate icons
-                const { icons: ecoIcons } = getEcoIcon(project.eco);
-                const ecoFieldContent = project.eco ? `<p><strong>Eco:</strong> ${ecoIcons}</p>` : '';
-
-                // Add the website field with an icon
-                const websiteField = project.website ? `<a href="${project.website}" target="_blank"><i class="fas fa-link"></i></a>` : '';
-
-                const imagePath = `img/projects/${project.name.toLowerCase().replace(/ /g, '-').replace(/\./g, '')}.png`;
-                const img = new Image();
-                img.src = imagePath;
-
-                img.onload = () => {
-                    const projectTitle = `<h3 class="card-title"><img src="${imagePath}" alt="${project.name}" class="project-icon"> ${project.name}</h3>`;
-                    itemDiv.innerHTML = `
-                        ${projectTitle}
-                        <p><strong>Category:</strong> ${category}</p>
-                        <p>${xFieldContent} ${websiteField}</p>
-                        <p class="card-description">${project.description}</p>
-                        ${ecoFieldContent}
-                        <p><strong>Status:</strong> ${formattedStatus}</p>
-                        <p><strong>People:</strong> ${project.people}</p>
-                    `;
-                    itemContainer.appendChild(itemDiv);
-                };
-
-                img.onerror = () => {
-                    // If the image fails to load, add the item without the image
-                    const projectTitle = `<h3 class="card-title">${project.name}</h3>`;
-                    itemDiv.innerHTML = `
-                        ${projectTitle}
-                        <p><strong>Category:</strong> ${category}</p>
-                        <p>${xFieldContent} ${websiteField}</p>
-                        <p class="card-description">${project.description}</p>
-                        ${ecoFieldContent}
-                        <p><strong>Status:</strong> ${formattedStatus}</p>
-                        <p><strong>People:</strong> ${project.people}</p>
-                    `;
-                    itemContainer.appendChild(itemDiv);
-                };
+                const cardDiv = createProjectCard(project, category);
+                itemContainer.appendChild(cardDiv);
             });
         }
     }
@@ -238,7 +258,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     name: projectName,
                     website: projectWebsite, // Store the website separately
                     description: columns[1],
-                    eco: categoryName === "Events" ? null : columns[2], // Store eco only if not Events
+                    chain: categoryName === "Events" ? null : columns[2], // Store chain only if not Events
                     x: categoryName === "Events" ? columns[2] : columns[3],
                     status: categoryName === "Events" ? columns[3].replace(/`/g, '') : columns[4].replace(/`/g, ''), // Remove backticks from status
                     people: formattedPeople // Store formatted people
@@ -256,93 +276,34 @@ document.addEventListener("DOMContentLoaded", function() {
         const itemContainer = document.querySelector("#tables-container");
         const categoryFilter = document.getElementById("category-filter");
 
-        // Clear existing items
         itemContainer.innerHTML = '';
-        categoryFilter.innerHTML = ''; // Clear existing options in the filter
+        categoryFilter.innerHTML = '';
 
-        // Add "All Categories" option
         const allOption = document.createElement("option");
         allOption.value = "all";
         allOption.textContent = "All Categories";
         categoryFilter.appendChild(allOption);
 
-        // Populate the category filter with actual categories
         for (const category in allData) {
             const option = document.createElement("option");
             option.value = category;
-            option.textContent = category; // Use the category name as the option text
+            option.textContent = category;
             categoryFilter.appendChild(option);
         }
 
-        // Populate the items for the initial view
         for (const category in allData) {
             const categoryHeader = document.createElement("h2");
-            categoryHeader.textContent = category; // Use the category name as the header
+            categoryHeader.textContent = category;
             itemContainer.appendChild(categoryHeader);
 
-            // Create a card container for the current category
             const cardContainer = document.createElement('div');
-            cardContainer.classList.add('card-container'); // Add the card-container class
+            cardContainer.classList.add('card-container');
 
             allData[category].forEach(project => {
-                const itemDiv = document.createElement("div");
-                itemDiv.classList.add("card"); // Add the card class for styling
-
-                const imagePath = `img/projects/${project.name.toLowerCase().replace(/ /g, '-').replace(/\./g, '')}.png`;
-                const img = new Image();
-                img.src = imagePath;
-
-                // Define variables for the project details
-                const xFieldMatch = project.x.match(/\[(.+?)\]\((.+?)\)/); // Match [Name](URL)
-                let xFieldContent = project.x; // Default to original if no match
-
-                if (xFieldMatch) {
-                    const linkText = xFieldMatch[1]; // Text inside []
-                    const linkUrl = xFieldMatch[2]; // URL inside ()
-                    xFieldContent = `<a href="${linkUrl}" target="_blank"><i class="fab fa-x-twitter"></i></a>`; // Create hyperlink with new Twitter "X" icon
-                }
-
-                // Format the Status field to be italic
-                const formattedStatus = `<em>${project.status}</em>`; // Wrap status in <em> tags
-
-                // Conditionally render the Eco field with the appropriate icons
-                const { icons: ecoIcons } = getEcoIcon(project.eco);
-                const ecoFieldContent = project.eco ? `<p><strong>Eco:</strong> ${ecoIcons}</p>` : '';
-
-                // Add the website field with an icon
-                const websiteField = project.website ? `<a href="${project.website}" target="_blank"><i class="fas fa-link"></i></a>` : '';
-
-                img.onload = () => {
-                    const projectTitle = `<h3 class="card-title"><img src="${imagePath}" alt="${project.name}" class="project-icon"> ${project.name}</h3>`;
-                    itemDiv.innerHTML = `
-                        ${projectTitle}
-                        <p><strong>Category:</strong> ${category}</p>
-                        <p>${xFieldContent} ${websiteField}</p>
-                        <p class="card-description">${project.description}</p>
-                        ${ecoFieldContent}
-                        <p><strong>Status:</strong> ${formattedStatus}</p>
-                        <p><strong>People:</strong> ${project.people}</p>
-                    `;
-                    cardContainer.appendChild(itemDiv);
-                };
-
-                img.onerror = () => {
-                    // If the image fails to load, add the item without the image
-                    const projectTitle = `<h3 class="card-title">${project.name}</h3>`;
-                    itemDiv.innerHTML = `
-                        ${projectTitle}
-                        <p><strong>Category:</strong> ${category}</p>
-                        <p>${xFieldContent} ${websiteField}</p>
-                        <p class="card-description">${project.description}</p>
-                        ${ecoFieldContent}
-                        <p><strong>Status:</strong> ${formattedStatus}</p>
-                        <p><strong>People:</strong> ${project.people}</p>
-                    `;
-                    cardContainer.appendChild(itemDiv);
-                };
+                const cardDiv = createProjectCard(project, category);
+                cardContainer.appendChild(cardDiv);
             });
 
-            // Append the card container to the item container
             itemContainer.appendChild(cardContainer);
         }
     }
