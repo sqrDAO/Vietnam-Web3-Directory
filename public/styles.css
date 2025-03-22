@@ -117,7 +117,7 @@ footer {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-#search-input, #category-filter {
+#search-input, #category-filter, #eco-filter {
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -130,8 +130,17 @@ footer {
 }
 
 #category-filter {
-    flex: 1;
+    flex: 0.5;
     margin-right: 10px;
+}
+
+#eco-filter {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    flex: 0.5; /* Ensure it takes up space similar to the other filters */
+    margin-left: 10px; /* Add margin to separate from the previous input */
 }
 
 /* Card container */
@@ -189,7 +198,7 @@ footer {
         flex-direction: column;
     }
 
-    #search-input, #category-filter {
+    #search-input, #category-filter, #eco-filter {
         margin: 0 0 10px 0;
         width: 100%;
     }

@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const itemContainer = document.querySelector("#tables-container");
     const categoryFilter = document.getElementById("category-filter");
     const searchInput = document.getElementById("search-input");
+    const ecoFilter = document.getElementById("eco-filter");
 
     showLoading();
 
@@ -17,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
             console.log("README.md loaded successfully.");
             Object.assign(allData, parseAllData(data)); // Store parsed data
             populateItems(allData); // Populate items initially
+            populateEcoFilter(allData);
             hideLoading();
         })
         .catch(error => {
@@ -26,13 +28,43 @@ document.addEventListener("DOMContentLoaded", function() {
 
     categoryFilter.addEventListener('change', function() {
         const selectedCategory = this.value;
-        filterItems(selectedCategory, searchInput.value);
+        filterItems(selectedCategory, searchInput.value, ecoFilter.value.toLowerCase());
     });
 
     searchInput.addEventListener('input', function() {
         const searchTerm = this.value.toLowerCase();
-        filterItems(categoryFilter.value, searchTerm);
+        filterItems(categoryFilter.value, searchTerm, ecoFilter.value.toLowerCase());
     });
+
+    ecoFilter.addEventListener('change', function() {
+        const selectedEco = this.value.toLowerCase();
+        filterItems(categoryFilter.value, searchInput.value.toLowerCase(), selectedEco);
+    });
+
+    // Populate Eco filter options
+    function populateEcoFilter(allData) {
+        ecoFilter.innerHTML = '';
+        const allOption = document.createElement("option");
+        allOption.value = "all";
+        allOption.textContent = "All Ecosystems";
+        ecoFilter.appendChild(allOption);
+
+        const ecoSet = new Set();
+        for (const category in allData) {
+            allData[category].forEach(project => {
+                if (project.eco) {
+                    project.eco.split(',').forEach(eco => ecoSet.add(eco.trim()));
+                }
+            });
+        }
+
+        ecoSet.forEach(eco => {
+            const option = document.createElement("option");
+            option.value = eco.toLowerCase();
+            option.textContent = eco;
+            ecoFilter.appendChild(option);
+        });
+    }
 
     function getEcoIcon(ecos) {
         if (!ecos) {
@@ -64,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         const formattedStatus = `<em>${project.status}</em>`;
         const { icons: ecoIcons } = getEcoIcon(project.eco);
-        const ecoFieldContent = project.eco ? `<p><strong>Eco:</strong> ${ecoIcons}</p>` : '';
+        const ecoFieldContent = project.eco ? `<p><strong>Ecosystems:</strong> ${ecoIcons}</p>` : '';
         const websiteField = project.website ? `<a href="${project.website}" target="_blank"><i class="fas fa-link"></i></a>` : '';
 
         const imagePath = `img/projects/${project.name.toLowerCase().replace(/ /g, '-').replace(/\./g, '')}.png`;
@@ -93,11 +125,11 @@ document.addEventListener("DOMContentLoaded", function() {
         return itemDiv;
     }
 
-    function filterItems(selectedCategory, searchTerm) {
+    function filterItems(selectedCategory, searchTerm, selectedEco) {
         itemContainer.innerHTML = '';
         itemContainer.classList.add("card-container");
 
-        if (selectedCategory === "all" && searchTerm === "") {
+        if (selectedCategory === "all" && searchTerm === "" && selectedEco === "all") {
             populateItems(allData);
             return;
         }
@@ -107,7 +139,11 @@ document.addEventListener("DOMContentLoaded", function() {
         for (const category in allData) {
             if (selectedCategory === "all" || selectedCategory === category) {
                 allData[category].forEach(project => {
-                    if (project.name.toLowerCase().includes(searchTerm)) {
+                    const ecoNames = project.eco ? project.eco.toLowerCase().split(',').map(e => e.trim()) : [];
+                    const matchesSearch = project.name.toLowerCase().includes(searchTerm) || ecoNames.some(eco => eco.includes(searchTerm));
+                    const matchesEco = selectedEco === "all" || ecoNames.includes(selectedEco);
+
+                    if (matchesSearch && matchesEco) {
                         if (!groupedItems[category]) {
                             groupedItems[category] = [];
                         }
