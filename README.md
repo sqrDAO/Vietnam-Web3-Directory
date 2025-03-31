@@ -84,6 +84,12 @@ Your Ultimate Guide to the Vibrant Web3 Ecosystem in Vietnam! 🌟
 | [sqrFUND](https://sqrfund.io/) | sqrFUND is an AI-powered investment platform that helps users discover, analyze, and invest in Web3 projects. The platform leverages AI to provide comprehensive project analysis and risk assessment. | Solana | [@sqrFUND_ai](https://x.com/sqrFUND_ai) | `Beta` | [Long "Leo" Pham](https://x.com/sqrdao_intern) <br/> [Long Nguyen](https://x.com/EledraNguyen)  |
 | [Enso DeFAI](https://edas.ensofi.xyz/) | Enso DeFAI is an AI-powered DeFi platform that enables users to discover and engage with yield strategies through its EDAS (Enso Decentralized AI System) protocol. The platform features leaderboard tracking and multi-chain support. | Solana, Eclipse | [@ensodefai](https://x.com/ensodefai) | `Beta` | [Dree Do](https://x.com/dreedohaha) |
 
+### Validators
+
+| Name | Description | Eco | X | Status | Founders |
+|------|-------------|-----|---|--------|----------|
+| [TTT Labs](https://tienthuattoan.com/) | TTT is the largest and oldest community validator in Vietnam, providing validation services, educational resources, and facilitating access to the Vietnamese crypto market, with a Total Value Staked (TVS) of $100 million from over 30,000 users. | Cosmos, Berachain | [@ttt_lab](https://x.com/ttt_lab) | `Active` | [Hoang The Duc](https://x.com/hoangtheduc1234) |
+
 ## Builder Resources
 
 ### Investors
